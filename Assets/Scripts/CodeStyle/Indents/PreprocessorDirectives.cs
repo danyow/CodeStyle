@@ -12,11 +12,11 @@ namespace CodeStyle.Indents
 // Indent #if #else #elif #endif （缩进 #if #else #elif #endif）
 namespace N
 {
-    class C
+    class A
     {
 
 #if !HideSomething
-        int myField;
+        private int _myField;
 #endif
 
     }
@@ -25,11 +25,11 @@ namespace N
 // Indent #region #endRegion （缩进 #regin #endRegion）
 namespace N
 {
-    class D
+    class B
     {
 
 #region Fields
-        int myField;
+        private int _myField;
 #endregion
 
     }
@@ -38,11 +38,11 @@ namespace N
 // Indent other preprocessor directives （缩进其他预处理器指令）
 namespace N
 {
-    class E
+    class C
     {
         
 #pragma warning disable CS3021
-        int myField;
+        private int _myField;
 #warning Fixme
         
     }

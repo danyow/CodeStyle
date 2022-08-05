@@ -85,7 +85,5 @@ namespace CodeStyle.Indents
                 6
             );
         }
-
-
     }
 }

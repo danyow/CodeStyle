@@ -30,6 +30,11 @@ namespace CodeStyle
             return UnityEngine.Random.Range(0, 1) % 2 == 0;
         }
 
+        public static object Object()
+        {
+            return default;
+        }
+
         public static int[] Array()
         {
             return new int[]
@@ -45,6 +50,11 @@ namespace CodeStyle
         public static int Method<T1, T2>(params object[] parameter)
         {
             return 0;
+        }
+
+        public static void DoSomething()
+        {
+            
         }
     }
 
@@ -83,5 +93,16 @@ namespace CodeStyle
     public class Class2
     {
 
+    }
+
+    public interface I1
+    {
+        
+    }
+    
+    public interface IMyInterface
+    {
+        int Prop1 { get; set; }
+        int Prop2 { get; set; }
     }
 }

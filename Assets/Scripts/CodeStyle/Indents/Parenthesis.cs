@@ -12,6 +12,7 @@ namespace CodeStyle.Indents
         {
             var parameter1 = Fake.Boolean();
             var parameter2 = Fake.Boolean();
+
             var x = Fake.Method(
                 parameter1,
                 parameter2

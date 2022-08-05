@@ -1,0 +1,14 @@
+
+[*]
+
+# ReSharper properties
+resharper_braces_for_fixed = not_required
+resharper_braces_for_for = not_required
+resharper_braces_for_foreach = not_required
+resharper_braces_for_lock = not_required
+resharper_braces_for_using = not_required
+resharper_csharp_wrap_after_invocation_lpar = true
+resharper_csharp_wrap_arguments_style = chop_if_long
+resharper_csharp_wrap_before_declaration_rpar = true
+resharper_csharp_wrap_before_invocation_rpar = true
+resharper_wrap_chained_binary_expressions = wrap_if_long

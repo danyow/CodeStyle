@@ -41,7 +41,7 @@ namespace CodeStyle
         {
             return 0;
         }
-        
+
         public static int Method<T1, T2>(params object[] parameter)
         {
             return 0;
@@ -53,7 +53,7 @@ namespace CodeStyle
 
         public void Dispose()
         {
-            
+
         }
     }
 
@@ -62,7 +62,7 @@ namespace CodeStyle
 
         public void Dispose()
         {
-            
+
         }
     }
 
@@ -71,17 +71,17 @@ namespace CodeStyle
 
         public void Dispose()
         {
-            
+
         }
     }
 
     public class Class1
     {
-        
+
     }
-    
+
     public class Class2
     {
-        
+
     }
 }

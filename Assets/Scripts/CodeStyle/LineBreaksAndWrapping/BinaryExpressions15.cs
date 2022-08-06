@@ -90,8 +90,7 @@ namespace CodeStyle.LineBreaksAndWrapping
                 or VeryLongName4
                 or VeryLongName5;
         }
-
-
+        
         // Wrap complex binary patterns
         // 包装复杂二进制模式
         private void Foo4()
@@ -127,6 +126,5 @@ namespace CodeStyle.LineBreaksAndWrapping
                 Foo();
             } while (var1 == null || var2 == null);
         }
-
     }
 }

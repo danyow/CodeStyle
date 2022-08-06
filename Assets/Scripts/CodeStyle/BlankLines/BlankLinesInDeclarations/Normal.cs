@@ -39,8 +39,6 @@
 
 namespace CodeStyle.BlankLines.BlankLinesInDeclarations
 {
-
-
     public class Normal : Base
     {
         // Keep max blank lines in declarations 

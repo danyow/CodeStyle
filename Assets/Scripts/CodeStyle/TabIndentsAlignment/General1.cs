@@ -8,7 +8,6 @@ namespace CodeStyle.TabIndentsAlignment // 制表符缩进对齐
 {
     public class General1 : Base
     {
-
         [Settings(@"Indent style")]
         [Tanslate(@"缩进样式")]
         public void Foo1()

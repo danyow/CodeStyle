@@ -94,6 +94,5 @@ namespace CodeStyle.Spaces
             p++;
             --p;
         }
-
     }
 }

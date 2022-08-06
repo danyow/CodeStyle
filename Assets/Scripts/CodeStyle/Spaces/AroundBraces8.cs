@@ -57,7 +57,6 @@ namespace CodeStyle.Spaces
     // Around Braces
     public class AroundBraces8 : Base
     {
-
         // Before single line accessors block
         int Property { get; set; }
 
@@ -91,6 +90,5 @@ namespace CodeStyle.Spaces
                 2
             };
         }
-
     }
 }

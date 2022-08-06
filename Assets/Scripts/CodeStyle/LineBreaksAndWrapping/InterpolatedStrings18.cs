@@ -60,6 +60,5 @@ namespace CodeStyle.LineBreaksAndWrapping
             var s =
                 $@"id={id} src={src} dest={dest}";
         }
-
     }
 }

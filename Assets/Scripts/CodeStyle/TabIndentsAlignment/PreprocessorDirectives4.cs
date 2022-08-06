@@ -9,9 +9,9 @@ namespace N
 {
     class A
     {
- #if !HideSomething
+#if !HideSomething
         int myField;
- #endif
+#endif
     }
 }
 

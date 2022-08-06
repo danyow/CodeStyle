@@ -84,6 +84,5 @@ namespace CodeStyle.Spaces
         {
             int[][,] x = null;
         }
-
     }
 }

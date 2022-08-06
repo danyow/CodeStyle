@@ -146,6 +146,5 @@ namespace CodeStyle.Spaces
                 foo();
             }
         }
-
     }
 }

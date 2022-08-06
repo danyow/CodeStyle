@@ -49,7 +49,6 @@ namespace CodeStyle.LineBreaksAndWrapping
 {
     public class DeclarationBlocks5 : Base
     {
-
         // Keep existing arrangement of declaration blocks
         interface I
         {

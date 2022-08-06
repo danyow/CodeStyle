@@ -21,6 +21,7 @@
 // ReSharper disable IdentifierTypo
 // ReSharper disable UnassignedGetOnlyAutoProperty
 // ReSharper disable UnusedParameter.Global
+// ReSharper disable ConvertConditionalTernaryExpressionToSwitchExpression
 
 #pragma warning disable CS0414
 #pragma warning disable CS8509

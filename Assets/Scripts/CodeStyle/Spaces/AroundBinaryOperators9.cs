@@ -56,7 +56,6 @@ namespace CodeStyle.Spaces
     // Around Binary Operators
     public class AroundBinaryOperators9 : Base
     {
-
         // Assignment operators (=+....
         private void Foo1()
         {

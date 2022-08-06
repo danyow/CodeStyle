@@ -40,6 +40,7 @@
 // ReSharper disable EmptyGeneralCatchClause
 // ReSharper disable RedundantEmptyFinallyBlock
 // ReSharper disable RedundantEmptySwitchSection
+// ReSharper disable ArrangeObjectCreationWhenTypeEvident
 
 #pragma warning disable CS0414
 #pragma warning disable CS8509
@@ -133,6 +134,5 @@ namespace CodeStyle.Spaces
         {
             List<int> x = new(5);
         }
-
     }
 }

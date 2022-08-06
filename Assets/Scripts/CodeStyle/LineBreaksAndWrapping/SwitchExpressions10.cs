@@ -35,6 +35,7 @@
 // ReSharper disable EmptyConstructor
 // ReSharper disable HeuristicUnreachableCode
 // ReSharper disable RedundantJumpStatement
+// ReSharper disable ArrangeRedundantParentheses
 
 #pragma warning disable CS0414
 #pragma warning disable CS8509

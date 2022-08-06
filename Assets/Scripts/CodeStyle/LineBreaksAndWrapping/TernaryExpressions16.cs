@@ -89,6 +89,5 @@ namespace CodeStyle.LineBreaksAndWrapping
             d = roses ? red :
                 violets ? blue : so_are_you;
         }
-
     }
 }

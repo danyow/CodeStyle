@@ -61,8 +61,6 @@ namespace CodeStyle.Spaces
     // Other
     public class Other15 : Base
     {
-
-
         // After type cast parentheses
         private void Foo1()
         {
@@ -106,16 +104,14 @@ namespace CodeStyle.Spaces
         }
 
         // After operator keyword
-        public static bool operator ==(Other15 x, C y)
+        public static bool operator == (Other15 x, C y)
         {
             return false;
         }
 
-        public static bool operator !=(Other15 x, C y)
+        public static bool operator != (Other15 x, C y)
         {
             return false;
         }
-
-
     }
 }

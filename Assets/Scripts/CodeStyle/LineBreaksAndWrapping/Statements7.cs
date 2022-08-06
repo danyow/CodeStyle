@@ -44,13 +44,10 @@
 #pragma warning disable CS0472
 #pragma warning disable CS0168
 
-
 using System;
 
 namespace CodeStyle.LineBreaksAndWrapping
 {
-
-
     public class Statements7 : Base
     {
         // Place " else" on new line
@@ -113,6 +110,5 @@ namespace CodeStyle.LineBreaksAndWrapping
                 m = 4,
                 n = 5;
         }
-
     }
 }

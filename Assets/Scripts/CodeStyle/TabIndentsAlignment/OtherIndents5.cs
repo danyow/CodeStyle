@@ -78,7 +78,6 @@ namespace CodeStyle.TabIndentsAlignment
                 DoSomething();
             }
         }
-
     }
 }
 

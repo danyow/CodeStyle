@@ -67,8 +67,7 @@ namespace CodeStyle.LineBreaksAndWrapping
                 DoSomething1();
             }
         }
-
-
+        
         // Place a block with a single simple statement on the same line
         // 在同一行中放置一个具有单个简单语句的块
         void Foo1()
@@ -85,6 +84,5 @@ namespace CodeStyle.LineBreaksAndWrapping
         {
             EventHandler e = delegate { return; };
         }
-
     }
 }

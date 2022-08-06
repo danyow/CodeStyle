@@ -32,7 +32,6 @@ namespace CodeStyle.TabIndentsAlignment
     [Settings("AlignMultilineConstructs")]
     public class AlignMultilineConstructs6 : Base
     {
-
         /// <summary>
         /// 制表符用于缩进时如何对齐
         /// </summary>
@@ -44,8 +43,7 @@ namespace CodeStyle.TabIndentsAlignment
                 param2
             );
         }
-
-
+        
         // Align even if the resulting indentation is too large
         // Align even if the resulting indentation is too large.（即使结果缩进太大也对齐）
         // Allow alignment even if construct is located too far to the right, more than 2/3 of `Hard wrap at` limit

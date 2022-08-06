@@ -11,13 +11,10 @@
 #pragma warning disable CS0219
 namespace CodeStyle.TabIndentsAlignment
 {
-
     [Settings(@"Parenthesis")]
     [Tanslate(@"插入语?")]
     public class Parenthesis3 : Base
     {
-
-
         [Settings(@"Use continuous line indent inside parenthesis")]
         [Tanslate(@"在括号内使用连续行缩进")]
         private void UseContinuousLineIndentInsideParenthesis()

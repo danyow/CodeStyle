@@ -39,8 +39,6 @@ using System;
 
 namespace CodeStyle.BlankLines
 {
-
-
     public class BlankLinesInCode : Base
     {
         // Keep max blank lines in code

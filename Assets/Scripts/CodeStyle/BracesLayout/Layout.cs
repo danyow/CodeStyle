@@ -1,10 +1,14 @@
 // Type and namespace declaration (类型和命名空间声明)
 // Indent inside namespace declaration (在命名空间声明内缩进)
+
+// Type and namespace declaration
+// Indent inside namespace declaration
+
 namespace N
 {
     interface I
     {
-        void Foo();
+        void foo();
     }
 
     class E
@@ -14,24 +18,25 @@ namespace N
 // 大括号布局
 namespace CodeStyle.BracesLayout
 {
-    public class Layout
+    public class Layout: Base
     {
         
         // Method declaration (方法声明)
-        static class D
+        // Method declaration
+        class C
         {
-            private static void Method()
+            void Method()
             {
-                Imitation.Foo1();
-                Imitation.Foo2();
+                foo();
+                foo1();
             }
         }
 
         // Lambda and delegate (anonymous method declaration) （Lambda 和委托（匿名方法声明））
-        private delegate int Del();
+        // Lambda and delegate (anonymous method declaration)
         private void LambdaAndDelegate()
         {
-            Del d = delegate()
+            D d = delegate()
             {
                 const int x = 0;
                 return x;
@@ -40,16 +45,18 @@ namespace CodeStyle.BracesLayout
         
 
         // Property declaration （属性声明）
-        private class E
+        // Property declaration
+        class E
         {
-            private int? Property { get { return null; } set { } }
+            int? Property { get { return null; } set { } }
         }
 
 
         // Accessor declaration（访问者声明）
-        private class F
+        // Accessor declaration
+        class H
         {
-            private int? Property
+            int? Property
             {
                 get { return null; }
                 set
@@ -58,27 +65,17 @@ namespace CodeStyle.BracesLayout
                     Set(value);
                 }
             }
-
-            private static void Notify(int? v)
-            {
-                
-            }
-            
-            private static void Set(int? v)
-            {
-                
-            }
         }
 
         // Block under "case" label (在“case”标签下屏蔽)
+        // Block under "case" label
         private void BlockUnder()
         {
-            var expression = Imitation.Value<int>();
             switch (expression)
             {
                 case 0:
                 {
-                    Imitation.Foo1();
+                    foo();
                     break;
                 }
             }
@@ -87,39 +84,39 @@ namespace CodeStyle.BracesLayout
 
         // Expressions (initializers, switch expressions, patterns) （表达式（初始化器、开关表达式、模式））
         // Use continuous line indent inside expression braces  （ 在表达式大括号内使用连续行缩进）
+        // Expressions (initializers, switch expressions, patterns)
+        // Use continuous line indent inside expression braces
         private void UseContinuous()
         {
-            var array = new []
+            int[] array = new int[]
             {
                 1,
                 2,
-                3,
+                3
             };
         }
 
 
 
         // Other（其他）
+        // Other
         private void Other()
         {
-            var condition = Imitation.Value<bool>();
             if (condition)
             {
-                Imitation.Foo1();
+                foo();
             }
             else
             {
-                Imitation.Foo1();
+                foo();
             }
 
         }
         
         // Allow comment after '{' （允许在“{”后注释）
+        // Allow comment after '{'
         private void AllowComment()
         {
-            var condition = Imitation.Value<bool>();
-            var statement = Imitation.Value<int>();
-            
             if (condition)
             {
                 // comment
@@ -129,9 +126,10 @@ namespace CodeStyle.BracesLayout
 
 
         // Empty braces formatting（空大括号格式）
-        private class C
+        // Empty braces formatting
+        class I
         {
-            private void EmptyMethod()
+            void EmptyMethod()
             {
             }
         }

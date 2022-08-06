@@ -4,12 +4,12 @@ namespace CodeStyle.BlankLines
     /// <summary>
     /// 通常
     /// </summary>
-    public class General
+    public class General:Base
     {
         // Around region（region外面） -> 0
         // Inside region（region里面） -> 1
         
-        private abstract class C
+        abstract class C
         {
             protected abstract void Method1();
 #region Region Description
@@ -23,10 +23,13 @@ namespace CodeStyle.BlankLines
         // Before single-line comment（单行注释前） -> 0
         private void Foo()
         {
-            var x = 5;
-            // comment
-            Imitation.Foo1();
-            ////CommentedCall();
+            void Foo()
+            {
+                var x = 5;
+                // comment
+                Call();
+                ////CommentedCall();
+            }
         }
     }
 }

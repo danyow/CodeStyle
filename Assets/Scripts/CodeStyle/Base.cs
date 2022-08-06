@@ -1,155 +1,161 @@
 using System;
 
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable IdentifierTypo
+// ReSharper disable InconsistentNaming
+// ReSharper disable ParameterHidesMember
+// ReSharper disable NotAccessedField.Global
+// ReSharper disable UnusedTypeParameter
+// ReSharper disable UnusedParameter.Local
+// ReSharper disable EmptyNamespace
+// ReSharper disable MemberHidesStaticFromOuterClass
+// ReSharper disable FieldCanBeMadeReadOnly.Global
+
 namespace CodeStyle
 {
     public class Base
     {
-        protected static dynamic a;
-        protected static dynamic b;
-        protected static dynamic c;
-        protected static dynamic d;
-        protected static dynamic e;
-        protected static dynamic f;
-        protected static dynamic g;
-        protected static dynamic h;
-        protected static dynamic i;
-        protected static dynamic j;
-        protected static dynamic k;
-        protected static dynamic[] l;
-        protected static dynamic m;
-        protected static dynamic n;
-        protected static dynamic o;
-        protected static dynamic p;
-        protected static dynamic q;
-        protected static dynamic aa;
-        protected static dynamic bb;
-        protected static dynamic x;
-        protected static dynamic y;
-        protected static dynamic z;
-        protected static dynamic op;
-        protected static dynamic[] xs;
-        protected static dynamic xx;
-        protected static dynamic obj;
-        protected static dynamic xxx;
-        protected static dynamic xxxxx;
-        protected static dynamic xxxxxxx;
-        protected static dynamic zzz;
-        protected static dynamic foo;
-        protected static dynamic Foo;
-        protected static dynamic foo1;
-        protected static dynamic foo2;
-        protected static dynamic foo3;
-        protected static dynamic foo4;
-        protected static dynamic arg1;
-        protected static dynamic arg2;
-        protected static dynamic arg3;
-        protected static dynamic arg4;
-        protected static dynamic arg5;
-        protected static dynamic arg6;
-        protected static dynamic arg7;
-        protected static dynamic arg8;
-        protected static dynamic arg9;
-        protected static dynamic var1;
-        protected static dynamic var2;
-        protected static dynamic val1;
-        protected static dynamic val2;
-        protected static dynamic val3;
-        protected static dynamic val4;
-        protected static dynamic val5;
-        protected static dynamic val6;
-        protected static dynamic val7;
-        protected static dynamic val8;
-        protected static dynamic val9;
-        protected static dynamic Element1;
-        protected static dynamic ElementX;
-        protected static dynamic ElementY;
-        protected static dynamic ElementZ;
-        protected static dynamic ElementZzz;
-        protected static dynamic myField1;
-        protected static dynamic expression1;
-        protected static dynamic expression2;
-        protected static dynamic expression3;
-        protected static dynamic expression4;
-        protected static dynamic expression5;
-        protected static dynamic expression6;
-        protected static dynamic expression7;
-        protected static dynamic fooCall;
-        protected static dynamic param1;
-        protected static dynamic param2;
-        protected static dynamic expr1;
-        protected static dynamic expr2;
-        protected static dynamic myField;
-        protected static dynamic firstParameter;
-        protected static dynamic secondParameter;
-        protected static dynamic sourceObject;
-        protected static dynamic destination;
-        protected static dynamic statement;
-        protected static dynamic initial;
-        protected static dynamic loopLimit;
-        protected static dynamic source1;
-        protected static dynamic source2;
-        protected static dynamic source3;
-        protected static dynamic condition;
-        protected static dynamic condition1;
-        protected static dynamic condition2;
-        protected static dynamic someCondition;
-        protected static dynamic otherCondition;
-        protected static dynamic parameter1;
-        protected static dynamic parameter2;
-        protected static dynamic expression;
-        protected static dynamic MyVar;
-        protected static dynamic SomeMyMethod;
-        protected static dynamic CallMethod;
-        protected static dynamic myObject;
-        protected static dynamic someRatherLongExpression;
-        protected static dynamic DoSomething;
-        protected static dynamic DoSomething1;
-        protected static dynamic DoSomething2;
-        protected static dynamic DoSomethingElse;
-        protected static dynamic DoMoreThings;
-        protected static dynamic DoThis;
-        protected static dynamic DoThat;
-        protected static dynamic DoIt;
-        protected static dynamic DoItAgainWithLove;
-        protected static dynamic DoNothing;
-        protected static dynamic SomeFunc1;
-        protected static dynamic SomeFunc2;
-        protected static dynamic SomeMethod;
-        protected static dynamic OtherMethod;
-        protected static dynamic ThirdMethod;
-        protected static dynamic Call;
-        protected static dynamic CallMe;
-        protected static dynamic Notify;
-        protected static dynamic NotifySomething;
-        protected static dynamic Set;
-        protected static dynamic Logger;
-        protected static dynamic hereGoesSomeBoolExpression;
-        protected static dynamic returnThisIfTrue;
-        protected static dynamic returnThatIfFalse;
-        protected static dynamic arg;
-        protected static dynamic you;
-        protected static dynamic error;
-        protected static dynamic red;
-        protected static dynamic warning;
-        protected static dynamic yellow;
-        protected static dynamic green;
-        protected static dynamic tiger;
-        protected static dynamic dangerous;
-        protected static dynamic cat;
-        protected static dynamic cute;
-        protected static dynamic boring;
-        protected static dynamic roses;
-        protected static dynamic violets;
-        protected static dynamic blue;
-        protected static dynamic so_are_you;
-        protected static dynamic[] list;
-        protected static dynamic cond;
-        protected static dynamic id;
-        protected static dynamic src;
-        protected static dynamic dest;
-        protected static dynamic expr;
-        protected static dynamic collection;
-        protected static dynamic array;
+        protected static dynamic a = null;
+        protected static dynamic b = null;
+        protected static dynamic c = null;
+        protected static dynamic d = null;
+        protected static dynamic e = null;
+        protected static dynamic f = null;
+        protected static dynamic g = null;
+        protected static dynamic h = null;
+        protected static dynamic i = null;
+        protected static dynamic j = null;
+        protected static dynamic k = null;
+        protected static dynamic[] l = null;
+        protected static dynamic m = null;
+        protected static dynamic n = null;
+        protected static dynamic o = null;
+        protected static dynamic p = null;
+        protected static dynamic aa = null;
+        protected static dynamic bb = null;
+        protected static dynamic x = null;
+        protected static dynamic y = null;
+        protected static dynamic z = null;
+        protected static dynamic op = null;
+        protected static dynamic[] xs = null;
+        protected static dynamic xx = null;
+        protected static dynamic obj = null;
+        protected static dynamic xxx = null;
+        protected static dynamic xxxxx = null;
+        protected static dynamic xxxxxxx = null;
+        protected static dynamic zzz = null;
+        protected static dynamic foo = null;
+        protected static dynamic Foo = null;
+        protected static dynamic foo1 = null;
+        protected static dynamic foo2 = null;
+        protected static dynamic foo3 = null;
+        protected static dynamic foo4 = null;
+        protected static dynamic arg1 = null;
+        protected static dynamic arg2 = null;
+        protected static dynamic arg3 = null;
+        protected static dynamic arg4 = null;
+        protected static dynamic arg5 = null;
+        protected static dynamic arg6 = null;
+        protected static dynamic arg7 = null;
+        protected static dynamic arg8 = null;
+        protected static dynamic arg9 = null;
+        protected static dynamic var1 = null;
+        protected static dynamic var2 = null;
+        protected static dynamic val1 = null;
+        protected static dynamic val2 = null;
+        protected static dynamic val3 = null;
+        protected static dynamic val4 = null;
+        protected static dynamic val5 = null;
+        protected static dynamic val6 = null;
+        protected static dynamic val7 = null;
+        protected static dynamic val8 = null;
+        protected static dynamic val9 = null;
+        protected static dynamic Element1 = null;
+        protected static dynamic ElementX = null;
+        protected static dynamic ElementY = null;
+        protected static dynamic ElementZ = null;
+        protected static dynamic ElementZzz = null;
+        protected static dynamic myField1 = null;
+        protected static dynamic expression1 = null;
+        protected static dynamic expression2 = null;
+        protected static dynamic expression3 = null;
+        protected static dynamic expression4 = null;
+        protected static dynamic expression5 = null;
+        protected static dynamic expression6 = null;
+        protected static dynamic expression7 = null;
+        protected static dynamic fooCall = null;
+        protected static dynamic param1 = null;
+        protected static dynamic param2 = null;
+        protected static dynamic expr1 = null;
+        protected static dynamic expr2 = null;
+        protected static dynamic myField = null;
+        protected static dynamic firstParameter = null;
+        protected static dynamic secondParameter = null;
+        protected static dynamic sourceObject = null;
+        protected static dynamic destination = null;
+        protected static dynamic statement = null;
+        protected static dynamic initial = null;
+        protected static dynamic loopLimit = null;
+        protected static dynamic source1 = null;
+        protected static dynamic source2 = null;
+        protected static dynamic source3 = null;
+        protected static dynamic condition = null;
+        protected static dynamic condition1 = null;
+        protected static dynamic condition2 = null;
+        protected static dynamic someCondition = null;
+        protected static dynamic otherCondition = null;
+        protected static dynamic parameter1 = null;
+        protected static dynamic parameter2 = null;
+        protected static dynamic expression = null;
+        protected static dynamic MyVar = null;
+        protected static dynamic SomeMyMethod = null;
+        protected static dynamic CallMethod = null;
+        protected static dynamic myObject = null;
+        protected static dynamic someRatherLongExpression = null;
+        protected static dynamic DoSomething = null;
+        protected static dynamic DoSomething1 = null;
+        protected static dynamic DoSomethingElse = null;
+        protected static dynamic DoMoreThings = null;
+        protected static dynamic DoThis = null;
+        protected static dynamic DoThat = null;
+        protected static dynamic DoIt = null;
+        protected static dynamic DoItAgainWithLove = null;
+        protected static dynamic DoNothing = null;
+        protected static dynamic SomeFunc1 = null;
+        protected static dynamic SomeFunc2 = null;
+        protected static dynamic Call = null;
+        protected static dynamic CallMe = null;
+        protected static dynamic Notify = null;
+        protected static dynamic NotifySomething = null;
+        protected static dynamic Set = null;
+        protected static dynamic Logger = null;
+        protected static dynamic hereGoesSomeBoolExpression = null;
+        protected static dynamic returnThisIfTrue = null;
+        protected static dynamic returnThatIfFalse = null;
+        protected static dynamic arg = null;
+        protected static dynamic you = null;
+        protected static dynamic error = null;
+        protected static dynamic red = null;
+        protected static dynamic warning = null;
+        protected static dynamic yellow = null;
+        protected static dynamic green = null;
+        protected static dynamic tiger = null;
+        protected static dynamic dangerous = null;
+        protected static dynamic cat = null;
+        protected static dynamic cute = null;
+        protected static dynamic boring = null;
+        protected static dynamic roses = null;
+        protected static dynamic violets = null;
+        protected static dynamic blue = null;
+        protected static dynamic so_are_you = null;
+        protected static dynamic[] list = null;
+        protected static dynamic cond = null;
+        protected static dynamic id = null;
+        protected static dynamic src = null;
+        protected static dynamic dest = null;
+        protected static dynamic expr = null;
+        protected static dynamic collection = null;
+        protected static dynamic array = null;
 
         protected const dynamic someOperand = null;
         protected const dynamic operand2 = null;
@@ -163,33 +169,33 @@ namespace CodeStyle
 
         protected delegate int D();
 
-        public static T Value<T>()
+        protected static TValue Value<TValue>()
         {
             return default;
         }
 
-        public dynamic Method(params dynamic[] p)
+        protected static dynamic Method(params dynamic[] p)
         {
             return default;
         }
 
-        public static void FooCall(Func<int> callback)
+        protected static void FooCall(Func<int> callback)
         {
 
         }
 
 
-        public static int Method<T1, T2>(params object[] parameter)
-        {
-            return 0;
-        }
-
-        public static int Method<T1>(params object[] parameter)
+        protected static int Method<T1, T2>(params object[] parameter)
         {
             return 0;
         }
 
-        public static int Method(dynamic arg1, dynamic arg2)
+        protected static int Method<T1>(params object[] parameter)
+        {
+            return 0;
+        }
+
+        protected static int Method(dynamic arg1, dynamic arg2)
         {
             return 0;
         }
@@ -209,7 +215,7 @@ namespace CodeStyle
             }
         }
 
-        public class B : IDisposable
+        protected class B : IDisposable
         {
 
             public void Dispose()
@@ -241,81 +247,81 @@ namespace CodeStyle
             }
         }
 
-        public class MyObj
+        protected class MyObj
         {
 
         }
 
-        public class Class1
+        protected class Class1
         {
 
         }
 
-        public class Class2
+        protected class Class2
         {
 
         }
 
-        public class BaseClass
+        protected class BaseClass
         {
 
         }
 
-        public interface I1
+        protected interface I1
         {
 
         }
 
-        public interface I2
+        protected interface I2
         {
 
         }
 
-        public interface I3
+        protected interface I3
         {
 
         }
 
-        public interface I4
+        protected interface I4
         {
 
         }
 
-        public interface IMyInterface
+        protected interface IMyInterface
         {
-            int Prop1 { get; set; }
-            int Prop2 { get; set; }
+            int Prop1 { get; }
+            int Prop2 { get; }
         }
 
-        public interface IMyInterface2 : IMyInterface
-        {
-
-        }
-
-        public interface IMyInterface3 : IMyInterface
+        protected interface IMyInterface2 : IMyInterface
         {
 
         }
 
-        public interface IInterface
+        protected interface IMyInterface3 : IMyInterface
         {
 
         }
 
-        public class MyType
+        protected interface IInterface
         {
-            public dynamic Field1;
-            public dynamic Field2;
-            public dynamic FShort;
-            public dynamic FieldLongLong;
-            public dynamic F1;
-            public dynamic F2;
-            public dynamic F3;
-            public dynamic F4;
-            public dynamic F5;
-            public dynamic F6;
-            public dynamic F7;
-            public dynamic F8;
+
+        }
+
+        protected class MyType
+        {
+            public dynamic Field1 = null;
+            public dynamic Field2 = null;
+            public dynamic FShort = null;
+            public dynamic FieldLongLong = null;
+            public dynamic F1 = null;
+            public dynamic F2 = null;
+            public dynamic F3 = null;
+            public dynamic F4 = null;
+            public dynamic F5 = null;
+            public dynamic F6 = null;
+            public dynamic F7 = null;
+            public dynamic F8 = null;
         }
 
         public class SomeType
@@ -323,7 +329,7 @@ namespace CodeStyle
 
         }
 
-        public interface ISomeInterface
+        protected interface ISomeInterface
         {
 
         }
@@ -346,14 +352,14 @@ namespace CodeStyle
             }
         }
 
-        public class StudentName
+        protected class StudentName
         {
             public string FirstName;
             public string LastName;
             public int ID;
         }
 
-        public enum Op
+        protected enum Op
         {
             Add,
             Subtract,
@@ -361,19 +367,19 @@ namespace CodeStyle
             Divide,
         }
 
-        public enum T
+        protected enum T
         {
             A,
             B,
             C,
         }
 
-        public enum MyEnum
+        protected enum MyEnum
         {
             MyConstant,
         }
 
-        public class AttributeAttribute : Attribute
+        protected class AttributeAttribute : Attribute
         {
             public AttributeAttribute(params object[] ps)
             {
@@ -382,7 +388,7 @@ namespace CodeStyle
         }
 
 
-        public class AttrAttribute : Attribute
+        protected class AttrAttribute : Attribute
         {
             public AttrAttribute(params object[] ps)
             {
@@ -390,7 +396,7 @@ namespace CodeStyle
             }
         }
 
-        public class Attr1Attribute : Attribute
+        protected class Attr1Attribute : Attribute
         {
             public Attr1Attribute(params object[] ps)
             {
@@ -398,7 +404,7 @@ namespace CodeStyle
             }
         }
 
-        public class Attr2Attribute : Attribute
+        protected class Attr2Attribute : Attribute
         {
             public Attr2Attribute(params object[] ps)
             {
@@ -406,7 +412,7 @@ namespace CodeStyle
             }
         }
 
-        public class Attr3Attribute : Attribute
+        protected class Attr3Attribute : Attribute
         {
             public Attr3Attribute(params object[] ps)
             {

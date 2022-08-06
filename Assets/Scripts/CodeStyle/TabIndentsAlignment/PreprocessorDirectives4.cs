@@ -1,6 +1,7 @@
 // ReSharper disable InconsistentNaming
 // ReSharper disable ArrangeTypeMemberModifiers
 // ReSharper disable UnusedType.Global
+
 #pragma warning disable CS1030
 
 // Indent #if, #else, #elif, #endif

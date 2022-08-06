@@ -1,9 +1,8 @@
 namespace CodeStyle.BlankLines.BlankLinesInDeclarations
 {
-    
 
-    
-    public class Normal: Base
+
+    public class Normal : Base
     {
         // Keep max blank lines in declarations 
         class C
@@ -17,7 +16,7 @@ namespace CodeStyle.BlankLines.BlankLinesInDeclarations
             {
             }
         }
-        
+
         // Remove blank lines after "{" and before "}" in declarations
         class D
         {
@@ -31,7 +30,7 @@ namespace CodeStyle.BlankLines.BlankLinesInDeclarations
             }
 
         }
-        
+
         // Around type
         class C3
         {
@@ -130,13 +129,13 @@ namespace CodeStyle.BlankLines.BlankLinesInDeclarations
                 }
             }
         }
-        
+
         // Around single line property/event accessor
         class C15
         {
             public int X { get { return 1; } set { myField = value; } }
         }
-        
+
         // Around method
         class C16
         {
@@ -152,7 +151,7 @@ namespace CodeStyle.BlankLines.BlankLinesInDeclarations
                 foo2();
             }
         }
-        
+
         // Around single line method
         abstract class C17
         {
@@ -205,4 +204,3 @@ class C4
 class C5
 {
 }
-

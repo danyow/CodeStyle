@@ -1,7 +1,7 @@
 namespace CodeStyle.Spaces
 {
     // Preserve Existing Formatting
-    public class PreserveExistingFormatting1: Base
+    public class PreserveExistingFormatting1 : Base
     {
         // Extra spaces inside
         private void Foo1()

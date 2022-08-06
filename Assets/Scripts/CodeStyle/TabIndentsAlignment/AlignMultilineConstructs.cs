@@ -1,7 +1,6 @@
-using System;
 using System.Linq;
 
-namespace CodeStyle.Indents
+namespace CodeStyle.TabIndentsAlignment
 {
     /// <summary>
     /// 对齐多行结构
@@ -15,8 +14,10 @@ namespace CodeStyle.Indents
         // How to align when tabs are used for indents
         private void HowToAlignWhenTabsAreUsedForIndents()
         {
-            SomeMyMethod(param1,
-                param2);
+            SomeMyMethod(
+                param1,
+                param2
+            );
         }
 
 
@@ -31,8 +32,10 @@ namespace CodeStyle.Indents
         // Method parameters
         private void MethodParameters()
         {
-            void fooCall(int firstParameter,
-                int secondParameter)
+            void fooCall(
+                int firstParameter,
+                int secondParameter
+            )
             {
             }
         }
@@ -151,7 +154,8 @@ namespace CodeStyle.Indents
         // Property patterns
         private void PropertyPatterns()
         {
-            bool matches = sourceObject is MyType {
+            bool matches = sourceObject is MyType
+            {
                 Field1: 1,
                 Field2: 2,
             };
@@ -199,11 +203,13 @@ namespace CodeStyle.Indents
         // Anonymous method body
         private void AnonymousMethodBody()
         {
-            FooCall(delegate
-            {
-                DoSomething();
-                return 0;
-            });
+            FooCall(
+                delegate
+                {
+                    DoSomething();
+                    return 0;
+                }
+            );
         }
 
         /// <summary>
@@ -214,7 +220,8 @@ namespace CodeStyle.Indents
         {
             fooCall(
                 firstParameter,
-                secondParameter);
+                secondParameter
+            );
         }
 
         /// <summary>
@@ -223,8 +230,10 @@ namespace CodeStyle.Indents
         // Call arguments
         private void CallArguments()
         {
-            fooCall(firstParameter,
-                secondParameter);
+            fooCall(
+                firstParameter,
+                secondParameter
+            );
         }
 
 
@@ -318,7 +327,7 @@ namespace CodeStyle.Indents
             where T2 : I1
         {
         }
-        
+
         /// <summary>
         /// 突出的逗号
         /// </summary>
@@ -332,12 +341,14 @@ namespace CodeStyle.Indents
             , ISomeInterface
         {
             void fooCall(
-                int firstParameter
-                , int secondParameter)
+                int firstParameter,
+                int secondParameter
+            )
             {
                 fooCall(
-                    firstParameter
-                    , secondParameter);
+                    firstParameter,
+                    secondParameter
+                );
             }
         }
     }

@@ -1,4 +1,4 @@
-namespace CodeStyle.Indents
+namespace CodeStyle.TabIndentsAlignment
 {
     public class General : Base
     {

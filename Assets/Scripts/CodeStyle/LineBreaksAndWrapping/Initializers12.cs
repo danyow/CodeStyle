@@ -17,6 +17,7 @@ namespace CodeStyle.LineBreaksAndWrapping
                 A = 0
             };
         }
+
         // Place simple array, object and collection on single line 
         // 将简单的数组、对象和集合放在单行上。
         private void Foo2()
@@ -26,6 +27,7 @@ namespace CodeStyle.LineBreaksAndWrapping
                 A = 0
             };
         }
+
         // Max object and collection initializer elements on a single line
         // 单行上的MAX对象和集合初始化元素
         private void Foo3()
@@ -36,43 +38,74 @@ namespace CodeStyle.LineBreaksAndWrapping
             };
             x = new C()
             {
-                Prop1 = 1, Prop2 = 1
+                Prop1 = 1,
+                Prop2 = 1
             };
             x = new C()
             {
-                Prop1 = 1, Prop2 = 1, Prop3 = 1
+                Prop1 = 1,
+                Prop2 = 1,
+                Prop3 = 1
             };
             x = new C()
             {
-                Prop1 = 1, Prop2 = 1, Prop3 = 1, Prop4 = 1
+                Prop1 = 1,
+                Prop2 = 1,
+                Prop3 = 1,
+                Prop4 = 1
             };
             x = new C()
             {
-                Prop1 = 1, Prop2 = 1, Prop3 = 1, Prop4 = 1,
+                Prop1 = 1,
+                Prop2 = 1,
+                Prop3 = 1,
+                Prop4 = 1,
                 Prop5 = 1
             };
             x = new C()
             {
-                Prop1 = 1, Prop2 = 1, Prop3 = 1, Prop4 = 1,
-                Prop5 = 1, Prop6 = 1
+                Prop1 = 1,
+                Prop2 = 1,
+                Prop3 = 1,
+                Prop4 = 1,
+                Prop5 = 1,
+                Prop6 = 1
             };
             x = new C()
             {
-                Prop1 = 1, Prop2 = 1, Prop3 = 1, Prop4 = 1,
-                Prop5 = 1, Prop6 = 1, Prop7 = 1
+                Prop1 = 1,
+                Prop2 = 1,
+                Prop3 = 1,
+                Prop4 = 1,
+                Prop5 = 1,
+                Prop6 = 1,
+                Prop7 = 1
             };
             x = new C()
             {
-                Prop1 = 1, Prop2 = 1, Prop3 = 1, Prop4 = 1,
-                Prop5 = 1, Prop6 = 1, Prop7 = 1, Prop8 = 1
+                Prop1 = 1,
+                Prop2 = 1,
+                Prop3 = 1,
+                Prop4 = 1,
+                Prop5 = 1,
+                Prop6 = 1,
+                Prop7 = 1,
+                Prop8 = 1
             };
             x = new C()
             {
-                Prop1 = 1, Prop2 = 1, Prop3 = 1, Prop4 = 1,
-                Prop5 = 1, Prop6 = 1, Prop7 = 1, Prop8 = 1,
+                Prop1 = 1,
+                Prop2 = 1,
+                Prop3 = 1,
+                Prop4 = 1,
+                Prop5 = 1,
+                Prop6 = 1,
+                Prop7 = 1,
+                Prop8 = 1,
                 Prop9 = 1
             };
         }
+
         // Wrap object and collection initializer
         // 包装对象和集合初始化程序
         private void Foo4()
@@ -84,23 +117,86 @@ namespace CodeStyle.LineBreaksAndWrapping
                 PropertyZ = 3
             };
         }
-        
+
         // Max array initializer elements on a single line
         // 单行上的最大数组初始化元素
 
         private void Foo5()
         {
-            x = new[] { val1 };
-            x = new[] { val1, val2 };
-            x = new[] { val1, val2, val3 };
-            x = new[] { val1, val2, val3, val4 };
-            x = new[] { val1, val2, val3, val4, val5 };
-            x = new[] { val1, val2, val3, val4, val5, val6 };
-            x = new[] { val1, val2, val3, val4, val5, val6, val7 };
-            x = new[] { val1, val2, val3, val4, val5, val6, val7, val8 };
-            x = new[] { val1, val2, val3, val4, val5, val6, val7, val8, val9 };
+            x = new[]
+            {
+                val1
+            };
+            x = new[]
+            {
+                val1,
+                val2
+            };
+            x = new[]
+            {
+                val1,
+                val2,
+                val3
+            };
+            x = new[]
+            {
+                val1,
+                val2,
+                val3,
+                val4
+            };
+            x = new[]
+            {
+                val1,
+                val2,
+                val3,
+                val4,
+                val5
+            };
+            x = new[]
+            {
+                val1,
+                val2,
+                val3,
+                val4,
+                val5,
+                val6
+            };
+            x = new[]
+            {
+                val1,
+                val2,
+                val3,
+                val4,
+                val5,
+                val6,
+                val7
+            };
+            x = new[]
+            {
+                val1,
+                val2,
+                val3,
+                val4,
+                val5,
+                val6,
+                val7,
+                val8
+            };
+            x = new[]
+            {
+                val1,
+                val2,
+                val3,
+                val4,
+                val5,
+                val6,
+                val7,
+                val8,
+                val9
+            };
         }
-        
+
         // Wrap array initializer
         // 换行数组初始化器
         private void Foo6()

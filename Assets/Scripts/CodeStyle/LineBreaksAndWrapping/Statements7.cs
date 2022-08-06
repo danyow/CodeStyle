@@ -2,9 +2,9 @@ using System;
 
 namespace CodeStyle.LineBreaksAndWrapping
 {
-    
-    
-    public class Statements7: Base
+
+
+    public class Statements7 : Base
     {
         // Place " else" on new line
         private void P1()
@@ -18,7 +18,7 @@ namespace CodeStyle.LineBreaksAndWrapping
                 foo();
             }
         }
-        
+
         // Place "while" on new line
         private void P2()
         {
@@ -44,6 +44,7 @@ namespace CodeStyle.LineBreaksAndWrapping
                 foo();
             }
         }
+
         // Place "finally" on new line
         // Wrap "for" statement header
         private void P5()
@@ -54,7 +55,7 @@ namespace CodeStyle.LineBreaksAndWrapping
             {
             }
         }
-        
+
         // Wrap multiple declaration
         class C
         {

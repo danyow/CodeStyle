@@ -1,8 +1,8 @@
-namespace CodeStyle.Indents
+namespace CodeStyle.TabIndentsAlignment
 {
-    public class OtherIndents: Base
+    public class OtherIndents : Base
     {
-        
+
 
         /// <summary>
         /// 从Switch缩进Case
@@ -38,7 +38,7 @@ namespace CodeStyle.Indents
             where T1 : I1
         {
         }
-        
+
         // Place comments at first column when commenting out code 
         // Use previous element's indent on partial format
 

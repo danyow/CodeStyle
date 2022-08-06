@@ -1,6 +1,6 @@
 namespace CodeStyle.LineBreaksAndWrapping
 {
-    public class EmbeddedStatements8: Base
+    public class EmbeddedStatements8 : Base
     {
         // Keep existing arrangement of embedded statements
         private void P()
@@ -9,6 +9,7 @@ namespace CodeStyle.LineBreaksAndWrapping
             if (condition1)
                 DoSomething1();
         }
+
         // Place simple embedded statement on the same line
         private void P2()
         {
@@ -18,6 +19,7 @@ namespace CodeStyle.LineBreaksAndWrapping
                 condition1)
                 DoSomething();
         }
+
         // Place simple ”case” statement on the same line
         private dynamic P3()
         {
@@ -29,6 +31,7 @@ namespace CodeStyle.LineBreaksAndWrapping
                 case 3:
                     return a;
             }
+
             return null;
         }
     }

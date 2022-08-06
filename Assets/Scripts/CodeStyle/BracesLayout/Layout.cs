@@ -15,12 +15,13 @@ namespace N
     {
     }
 }
+
 // 大括号布局
 namespace CodeStyle.BracesLayout
 {
-    public class Layout: Base
+    public class Layout : Base
     {
-        
+
         // Method declaration (方法声明)
         // Method declaration
         class C
@@ -42,7 +43,7 @@ namespace CodeStyle.BracesLayout
                 return x;
             };
         }
-        
+
 
         // Property declaration （属性声明）
         // Property declaration
@@ -97,7 +98,6 @@ namespace CodeStyle.BracesLayout
         }
 
 
-
         // Other（其他）
         // Other
         private void Other()
@@ -112,7 +112,7 @@ namespace CodeStyle.BracesLayout
             }
 
         }
-        
+
         // Allow comment after '{' （允许在“{”后注释）
         // Allow comment after '{'
         private void AllowComment()
@@ -135,7 +135,3 @@ namespace CodeStyle.BracesLayout
         }
     }
 }
-
-
-
-

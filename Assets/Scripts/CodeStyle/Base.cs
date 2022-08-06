@@ -150,7 +150,7 @@ namespace CodeStyle
         protected static dynamic expr;
         protected static dynamic collection;
         protected static dynamic array;
-        
+
         protected const dynamic someOperand = null;
         protected const dynamic operand2 = null;
         protected const dynamic operand3 = null;
@@ -160,8 +160,9 @@ namespace CodeStyle
         protected const dynamic VeryLongName3 = null;
         protected const dynamic VeryLongName4 = null;
         protected const dynamic VeryLongName5 = null;
-        
+
         protected delegate int D();
+
         public static T Value<T>()
         {
             return default;
@@ -193,15 +194,15 @@ namespace CodeStyle
             return 0;
         }
 
-        
+
         public class A : IDisposable
         {
 
             public class B
             {
-                
+
             }
-            
+
             public void Dispose()
             {
 
@@ -233,8 +234,7 @@ namespace CodeStyle
             public dynamic PropertyY;
             public dynamic PropertyZ;
 
-            
-            
+
             public void Dispose()
             {
 
@@ -243,9 +243,9 @@ namespace CodeStyle
 
         public class MyObj
         {
-            
+
         }
-        
+
         public class Class1
         {
 
@@ -296,10 +296,10 @@ namespace CodeStyle
         {
 
         }
-        
+
         public interface IInterface
         {
-            
+
         }
 
         public class MyType
@@ -318,11 +318,11 @@ namespace CodeStyle
             public dynamic F8;
         }
 
-        public class  SomeType
+        public class SomeType
         {
-            
+
         }
-        
+
         public interface ISomeInterface
         {
 
@@ -367,7 +367,7 @@ namespace CodeStyle
             B,
             C,
         }
-        
+
         public enum MyEnum
         {
             MyConstant,
@@ -431,5 +431,5 @@ namespace CodeStyle
 
 namespace myNamespace
 {
-    
+
 }

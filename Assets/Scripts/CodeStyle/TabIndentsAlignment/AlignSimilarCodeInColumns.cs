@@ -2,12 +2,12 @@ using System;
 using SomeClass = System.String;
 
 
-namespace CodeStyle.Indents
+namespace CodeStyle.TabIndentsAlignment
 {
     /// <summary>
     /// 在列中对齐相似的代码
     /// </summary>
-    public class AlignSimilarCodeInColumns: Base
+    public class AlignSimilarCodeInColumns : Base
     {
         // Fix column alignment in adjacent lines
         // FixColumnAlignmentInAdjacentLines （修复相邻行中的列对齐）
@@ -15,8 +15,6 @@ namespace CodeStyle.Indents
         // 格式化某些代码时，如果需要，还可以修复相邻行中的列对齐
 
 
-
-        
         /// <summary>
         /// 字段和常量
         /// </summary>
@@ -48,9 +46,21 @@ namespace CodeStyle.Indents
         // Simple methods, operators, delegates
         class E
         {
-            [Attr] private string x(int p) { return "x" + p; }
-            [Attr(2)] public SomeClass xxxxx(string b) { return b; }
-            [Attr, Attr3] private string xxx() { return null; }
+            [Attr] private string x(int p)
+            {
+                return "x" + p;
+            }
+
+            [Attr(2)] public SomeClass xxxxx(string b)
+            {
+                return b;
+            }
+
+            [Attr, Attr3] private string xxx()
+            {
+                return null;
+            }
+
             [Attr] private string x2(int p) => "x" + p;
             [Attr(2)] public SomeClass xxxxx2(string b) => b;
             [Attr, Attr3] private string xxxx() => null;
@@ -65,7 +75,8 @@ namespace CodeStyle.Indents
             void MyMethod(
                 [Attr, Attr3] string xxx,
                 [Attr] string x = "x",
-                [Attr(2)] SomeClass xxxxx = "xxxxx")
+                [Attr(2)] SomeClass xxxxx = "xxxxx"
+            )
             {
             }
         }
@@ -184,7 +195,7 @@ namespace CodeStyle.Indents
                 case Op.Multiply: return x * y;
                 case Op.Divide:   return x / y;
             }
-            
+
             return 0;
         }
 

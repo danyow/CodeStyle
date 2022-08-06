@@ -1,5 +1,6 @@
 // Indent #if #else #elif #endif （缩进 #if #else #elif #endif）
 // Indent #if, #else, #elif, #endif
+
 namespace N
 {
     class A
@@ -16,9 +17,11 @@ namespace N
 {
     class B
     {
+
 #region Fields
         int myField;
 #endregion
+
     }
 }
 

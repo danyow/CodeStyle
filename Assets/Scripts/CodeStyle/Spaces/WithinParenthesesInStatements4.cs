@@ -3,7 +3,7 @@ using System;
 namespace CodeStyle.Spaces
 {
     // Within Parentheses in Statements
-    public class WithinParenthesesInStatements4: Base
+    public class WithinParenthesesInStatements4 : Base
     {
         // "if" parentheses
         private void Foo1()
@@ -13,6 +13,7 @@ namespace CodeStyle.Spaces
                 foo();
             }
         }
+
         // "while" parentheses
         private void Foo2()
         {
@@ -24,6 +25,7 @@ namespace CodeStyle.Spaces
                 } while (condition);
             }
         }
+
         // ”catch" parentheses
         private void Foo3()
         {
@@ -38,6 +40,7 @@ namespace CodeStyle.Spaces
             {
             }
         }
+
         // ”switch" parentheses
         private void Foo4()
         {
@@ -47,6 +50,7 @@ namespace CodeStyle.Spaces
                     break;
             }
         }
+
         // "for" parentheses
         private void Foo5()
         {
@@ -55,6 +59,7 @@ namespace CodeStyle.Spaces
                 foo();
             }
         }
+
         // "foreach" parentheses
         private void Foo6()
         {
@@ -62,7 +67,8 @@ namespace CodeStyle.Spaces
             {
                 foo();
             }
-        } 
+        }
+
         // "using" parentheses
         private void Foo7()
         {
@@ -71,6 +77,7 @@ namespace CodeStyle.Spaces
                 foo();
             }
         }
+
         // "lock" parentheses
         private void Foo8()
         {
@@ -79,6 +86,7 @@ namespace CodeStyle.Spaces
                 foo();
             }
         }
+
         // ”fixed" parentheses
         private unsafe void Foo9()
         {

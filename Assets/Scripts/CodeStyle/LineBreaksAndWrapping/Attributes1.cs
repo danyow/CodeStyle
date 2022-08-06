@@ -2,27 +2,33 @@ using UnityEngine;
 
 namespace CodeStyle.LineBreaksAndWrapping
 {
-    public class Attributes1: Base
+    public class Attributes1 : Base
     {
         // Place attribute section list on separate line if it is longer than
         // Attribute sections longer than specified values would be placed on separate line
 
         // Keep exiting arrangement of attributes
         [Attribute]
-        class C { }
+        class C
+        {
+        }
 
-        [Attribute] class C1 { }
-        
+        [Attribute] class C1
+        {
+        }
+
         // Place type attribute on the same line
         [Attribute]
-        class C2 { }
+        class C2
+        {
+        }
 
         [Attribute]
         class C3
         {
             // comment 
         }
-        
+
         // Place method attribute on the same line
         interface I
         {
@@ -38,9 +44,9 @@ namespace CodeStyle.LineBreaksAndWrapping
                 // comment
             }
         }
-        
+
         // Place property/indexer/event attribute on the same line
-        
+
         interface I2
         {
             [Attribute] int Property { get; }
@@ -58,7 +64,7 @@ namespace CodeStyle.LineBreaksAndWrapping
                 }
             }
         }
-        
+
         // Place accessor attribute on the same line
         interface I3
         {
@@ -78,7 +84,7 @@ namespace CodeStyle.LineBreaksAndWrapping
                 }
             }
         }
-        
+
         // Place field attribute on the same line
         class C7
         {

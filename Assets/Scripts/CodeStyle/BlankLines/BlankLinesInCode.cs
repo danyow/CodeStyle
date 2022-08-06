@@ -2,7 +2,7 @@ using System;
 
 namespace CodeStyle.BlankLines
 {
-    
+
 
     public class BlankLinesInCode : Base
     {
@@ -15,7 +15,7 @@ namespace CodeStyle.BlankLines
             foo();
         }
 
-        
+
         // Remove blank lines after "{" and before "}”in code
         void Method1()
         {
@@ -24,7 +24,7 @@ namespace CodeStyle.BlankLines
             foo();
 
         }
-        
+
         // Around local function
         void Method2()
         {
@@ -40,14 +40,19 @@ namespace CodeStyle.BlankLines
                 foo2();
             }
         }
-        
+
         // Around single line local function
         void Method4()
         {
-            void LocalFunction1() { }
-            void LocalFunction2() { }
+            void LocalFunction1()
+            {
+            }
+
+            void LocalFunction2()
+            {
+            }
         }
-        
+
         // Before statements with control transfer
         dynamic Foo(string args)
         {
@@ -58,7 +63,7 @@ namespace CodeStyle.BlankLines
             var smthElse = smth.GetSomethingElse();
             return null;
         }
-        
+
         // After statements with control transfer
         dynamic Foo2(string args)
         {
@@ -68,7 +73,7 @@ namespace CodeStyle.BlankLines
             var smthElse = smth.GetSomethingElse();
             return null;
         }
-        
+
         // Before statements with child blocks
         string Foo3(string arg)
         {
@@ -78,10 +83,11 @@ namespace CodeStyle.BlankLines
                 DoSomething();
                 DoSomethingElse();
             }
+
             DoMoreThings();
             return null;
         }
-        
+
         // After statements with child blocks
         string Foo4(string arg)
         {
@@ -91,10 +97,11 @@ namespace CodeStyle.BlankLines
                 DoSomething();
                 DoSomethingElse();
             }
+
             DoMoreThings();
             return null;
         }
-        
+
         // After multiline statements
         string Foo5(string arg)
         {
@@ -104,17 +111,19 @@ namespace CodeStyle.BlankLines
                 x.DoSomething();
                 x.DoSomethingElse();
             }
+
             DoSomething();
             foreach (var x in y)
                 x.DoSomething();
             DoSomething();
             DoSomething(
                 1,
-                2);
+                2
+            );
             DoSomething();
             return null;
         }
-        
+
         // Before multiline statements
         string Foo6(string arg)
         {
@@ -124,13 +133,15 @@ namespace CodeStyle.BlankLines
                 x.DoSomething();
                 x.DoSomethingElse();
             }
+
             DoSomething();
             foreach (var x in y)
                 x.DoSomething();
             DoSomething();
             DoSomething(
                 1,
-                2);
+                2
+            );
             DoSomething();
             return null;
         }

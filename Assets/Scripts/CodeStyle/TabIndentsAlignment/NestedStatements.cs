@@ -1,4 +1,4 @@
-namespace CodeStyle.Indents
+namespace CodeStyle.TabIndentsAlignment
 {
     /// <summary>
     /// 嵌套语句

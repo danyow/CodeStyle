@@ -14,6 +14,6 @@ namespace CodeStyle.Naming
 {
     public class NamingClass
     {
-        
+
     }
 }

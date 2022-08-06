@@ -15,8 +15,8 @@ namespace CodeStyle.LineBreaksAndWrapping
             public int Foo2() =>
                 2;
         }
-        
-        
+
+
         // Place method expression body on the same line
         class B
         {
@@ -30,6 +30,7 @@ namespace CodeStyle.LineBreaksAndWrapping
                 1 + // comment
                 2;
         }
+
         // Place property expression body on the same line
         class C
         {
@@ -41,6 +42,7 @@ namespace CodeStyle.LineBreaksAndWrapping
             public int Foo2 => 1 + // comment
                                2;
         }
+
         // Place property accessor expression body on the same line
         class D
         {
@@ -53,6 +55,7 @@ namespace CodeStyle.LineBreaksAndWrapping
                     2;
             }
         }
+
         // Prefer wrap before "=>" followed by expressions
         class E
         {

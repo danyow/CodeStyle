@@ -3,25 +3,29 @@ using System.ComponentModel;
 namespace CodeStyle.Spaces
 {
     // Around Colon
-    public class AroundColon13: Base
+    public class AroundColon13 : Base
     {
         // Before base types list colon
         class Derived : BaseClass, IInterface
         {
         }
+
         // After base types list colon
         class Derived1 : BaseClass, IInterface
         {
         }
+
         // Before type parameter constraint colon
         class C<T1> where T1 : IInterface
         {
         }
+
         // After type parameter constraint colon
         // Before type parameter constraint colon
         class C1<T1> where T1 : IInterface
         {
         }
+
         // Before colon in "case" statement
         private void Foo5()
         {
@@ -31,6 +35,7 @@ namespace CodeStyle.Spaces
                     break;
             }
         }
+
         // After colon in "case" statement
         private dynamic Foo6()
         {
@@ -42,6 +47,7 @@ namespace CodeStyle.Spaces
 
             return null;
         }
+
         // Before other colons
         [return: Description("returns A")] public A b1()
         {
@@ -49,6 +55,7 @@ namespace CodeStyle.Spaces
             var y = (tuple1: 1, tuple2: 2);
             return null;
         }
+
         // After other colons
         [return: Description("returns A")] public A b2()
         {

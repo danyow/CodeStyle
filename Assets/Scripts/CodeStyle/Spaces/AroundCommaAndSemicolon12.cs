@@ -1,18 +1,20 @@
 namespace CodeStyle.Spaces
 {
     // Around Comma and Semicolon 
-    public class AroundCommaAndSemicolon12: Base
+    public class AroundCommaAndSemicolon12 : Base
     {
         // Before comma
         private void Foo1()
         {
             foo(a, b, c);
         }
+
         // After comma
         private void Foo2()
         {
             foo(a, b, c);
         }
+
         // Before "for" semicolon
         private void Foo3()
         {
@@ -20,6 +22,7 @@ namespace CodeStyle.Spaces
             {
             }
         }
+
         // After "for" semicolon
         private void Foo4()
         {
@@ -27,6 +30,7 @@ namespace CodeStyle.Spaces
             {
             }
         }
+
         // Before semicolon
         private void Foo5()
         {

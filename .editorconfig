@@ -20,7 +20,7 @@ resharper_csharp_wrap_before_declaration_rpar = true
 resharper_csharp_wrap_before_invocation_rpar = true
 resharper_force_attribute_style = separate
 resharper_for_simple_types = use_explicit_type
-resharper_modifiers_order = public protected private internal new override abstract virtual sealed unsafe readonly extern static volatile async
+resharper_modifiers_order = protected private public internal new override unsafe virtual sealed static readonly extern abstract volatile async
 resharper_nested_ternary_style = compact
 resharper_object_creation_when_type_evident = explicitly_typed
 resharper_place_accessorholder_attribute_on_same_line = if_owner_is_single_line
@@ -32,5 +32,5 @@ resharper_trailing_comma_in_multiline_lists = false
 resharper_wrap_chained_binary_expressions = wrap_if_long
 
 # Microsoft .NET properties
-csharp_preferred_modifier_order = public, protected, private, internal, new, override, abstract, virtual, sealed, unsafe, readonly, extern, static, volatile, async:suggestion
+csharp_preferred_modifier_order = protected, private, public, internal, new, override, unsafe, virtual, sealed, static, readonly, extern, abstract, volatile, async:suggestion
 dotnet_style_predefined_type_for_member_access = false:suggestion

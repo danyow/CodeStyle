@@ -1,3 +1,7 @@
+// ReSharper disable EmptyNamespace
+// ReSharper disable CheckNamespace
+// ReSharper disable RedundantUsingDirective
+
 using System;
 using System;
 using System.Collections;

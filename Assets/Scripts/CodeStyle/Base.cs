@@ -76,6 +76,8 @@ namespace CodeStyle
         protected static dynamic fooCall;
         protected static dynamic param1;
         protected static dynamic param2;
+        protected static dynamic expr1;
+        protected static dynamic expr2;
         protected static dynamic myField;
         protected static dynamic firstParameter;
         protected static dynamic secondParameter;
@@ -145,6 +147,9 @@ namespace CodeStyle
         protected static dynamic id;
         protected static dynamic src;
         protected static dynamic dest;
+        protected static dynamic expr;
+        protected static dynamic collection;
+        protected static dynamic array;
         
         protected const dynamic someOperand = null;
         protected const dynamic operand2 = null;
@@ -178,10 +183,25 @@ namespace CodeStyle
             return 0;
         }
 
+        public static int Method<T1>(params object[] parameter)
+        {
+            return 0;
+        }
 
+        public static int Method(dynamic arg1, dynamic arg2)
+        {
+            return 0;
+        }
+
+        
         public class A : IDisposable
         {
 
+            public class B
+            {
+                
+            }
+            
             public void Dispose()
             {
 
@@ -276,6 +296,11 @@ namespace CodeStyle
         {
 
         }
+        
+        public interface IInterface
+        {
+            
+        }
 
         public class MyType
         {
@@ -293,6 +318,11 @@ namespace CodeStyle
             public dynamic F8;
         }
 
+        public class  SomeType
+        {
+            
+        }
+        
         public interface ISomeInterface
         {
 

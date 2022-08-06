@@ -10,10 +10,10 @@ namespace CodeStyle.Indents
         /// </summary>
         private void UseContinuousLineIndentInsideParenthesis()
         {
-            var parameter1 = Fake.Boolean();
-            var parameter2 = Fake.Boolean();
+            var parameter1 = Imitation.Value<bool>();
+            var parameter2 = Imitation.Value<bool>();
 
-            var x = Fake.Method(
+            var x = Imitation.Method(
                 parameter1,
                 parameter2
             );
@@ -44,8 +44,8 @@ namespace CodeStyle.Indents
         /// </summary>
         public void IndentStatementIfWhileForEtcParenthesis()
         {
-            var condition1 = Fake.Boolean();
-            var condition2 = Fake.Boolean();
+            var condition1 = Imitation.Value<bool>();
+            var condition2 = Imitation.Value<bool>();
             if (
                 condition1 &&
                 condition2
@@ -69,7 +69,7 @@ namespace CodeStyle.Indents
         /// </summary>
         public void IndentTypeArgumentsAngles()
         {
-            var x = Fake.Method<
+            var x = Imitation.Method<
                 Class1,
                 Class2
             >();

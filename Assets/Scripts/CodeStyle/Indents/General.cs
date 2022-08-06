@@ -12,20 +12,20 @@ namespace CodeStyle.Indents
         /// </summary>
         public void IndentStyle()
         {
-            var condition = Fake.Boolean();
-            var condition1 = Fake.Boolean();
+            var condition = Imitation.Value<bool>();
+            var condition1 = Imitation.Value<bool>();
 
             if (condition)
             {
                 if (condition1)
                 {
-                    Fake.Foo1();
-                    Fake.Foo2();
+                    Imitation.Foo1();
+                    Imitation.Foo2();
                 }
                 else
                 {
-                    Fake.Foo3();
-                    Fake.Foo4();
+                    Imitation.Foo3();
+                    Imitation.Foo4();
                 }
             }
         }
@@ -35,17 +35,17 @@ namespace CodeStyle.Indents
         /// </summary>
         public void ContinuousLineIndentMultiplier()
         {
-            var x = Fake.Foo1() +
-                    Fake.Foo2();
-            var y = Fake.Foo1() +
-                    Fake.Foo2() +
-                    Fake.Foo3() +
-                    Fake.Foo4();
+            var x = Imitation.Foo1() +
+                    Imitation.Foo2();
+            var y = Imitation.Foo1() +
+                    Imitation.Foo2() +
+                    Imitation.Foo3() +
+                    Imitation.Foo4();
             var z =
-                Fake.Foo1() +
-                Fake.Foo2() +
-                Fake.Foo3() +
-                Fake.Foo4();
+                Imitation.Foo1() +
+                Imitation.Foo2() +
+                Imitation.Foo3() +
+                Imitation.Foo4();
         }
     }
 }

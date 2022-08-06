@@ -40,10 +40,10 @@ namespace N
 {
     class C
     {
-        
+
 #pragma warning disable CS3021
         private int _myField;
 #warning Fixme
-        
+
     }
 }

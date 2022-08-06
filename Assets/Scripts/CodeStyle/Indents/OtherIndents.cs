@@ -7,7 +7,7 @@ namespace CodeStyle.Indents
         /// </summary>
         private void IndentCaseFromSwitch()
         {
-            var expression = Fake.Foo1();
+            var expression = Imitation.Foo1();
 
             switch (expression)
             {
@@ -42,14 +42,14 @@ namespace CodeStyle.Indents
         private void IndentBracesInsideStatementConditions()
         {
 
-            var x = Fake.Object();
+            var x = Imitation.Value<object>();
             while (x is IMyInterface
                    {
                        Prop1: 1,
                        Prop2: 2
                    })
             {
-                Fake.DoSomething();
+                Imitation.DoSomething();
             }
         }
 

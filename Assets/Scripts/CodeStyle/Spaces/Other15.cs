@@ -104,12 +104,12 @@ namespace CodeStyle.Spaces
         }
 
         // After operator keyword
-        public static bool operator == (Other15 x, C y)
+        public static bool operator ==(Other15 x, C y)
         {
             return false;
         }
 
-        public static bool operator != (Other15 x, C y)
+        public static bool operator !=(Other15 x, C y)
         {
             return false;
         }

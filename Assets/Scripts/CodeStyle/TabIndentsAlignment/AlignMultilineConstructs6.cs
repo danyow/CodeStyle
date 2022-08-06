@@ -43,7 +43,7 @@ namespace CodeStyle.TabIndentsAlignment
                 param2
             );
         }
-        
+
         // Align even if the resulting indentation is too large
         // Align even if the resulting indentation is too large.（即使结果缩进太大也对齐）
         // Allow alignment even if construct is located too far to the right, more than 2/3 of `Hard wrap at` limit

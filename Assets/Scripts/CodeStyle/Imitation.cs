@@ -53,6 +53,11 @@ namespace CodeStyle
 
         }
 
+        public static void DoSomethingElse()
+        {
+
+        }
+
         public static void FooCall(Func<int> callback)
         {
 
@@ -156,6 +161,8 @@ namespace CodeStyle
     {
         public int Field1;
         public int Field2;
+        public int FShort;
+        public int FieldLongLong;
     }
 
     public interface ISomeInterface
@@ -194,5 +201,56 @@ namespace CodeStyle
         Subtract,
         Multiply,
         Divide,
+    }
+
+    public enum MyEnum
+    {
+        MyConstant,
+    }
+
+
+    public class AttrAttribute : Attribute
+    {
+        public AttrAttribute(params object[] ps)
+        {
+
+        }
+    }
+
+    public class Attr1Attribute : Attribute
+    {
+        public Attr1Attribute(params object[] ps)
+        {
+
+        }
+    }
+
+    public class Attr2Attribute : Attribute
+    {
+        public Attr2Attribute(params object[] ps)
+        {
+
+        }
+    }
+
+    public class Attr3Attribute : Attribute
+    {
+        public Attr3Attribute(params object[] ps)
+        {
+
+        }
+    }
+
+    public class MoreThen
+    {
+        public static bool operator >(MoreThen a, string b)
+        {
+            return false;
+        }
+
+        public static bool operator <(MoreThen a, string b)
+        {
+            return false;
+        }
     }
 }

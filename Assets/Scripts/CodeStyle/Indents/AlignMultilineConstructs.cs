@@ -145,10 +145,10 @@ namespace CodeStyle.Indents
             var y = Imitation.Value<int>();
             var z = op switch
             {
-                Op.Add => x + y,
+                Op.Add      => x + y,
                 Op.Subtract => x - y,
                 Op.Multiply => x * y,
-                Op.Divide => x / y
+                Op.Divide   => x / y
             };
         }
 

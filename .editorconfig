@@ -2,6 +2,8 @@
 [*]
 
 # ReSharper properties
+resharper_accessor_owner_body = expression_body
+resharper_blank_lines_after_block_statements = 1
 resharper_braces_for_fixed = not_required
 resharper_braces_for_for = not_required
 resharper_braces_for_foreach = not_required
@@ -11,4 +13,10 @@ resharper_csharp_wrap_after_invocation_lpar = true
 resharper_csharp_wrap_arguments_style = chop_if_long
 resharper_csharp_wrap_before_declaration_rpar = true
 resharper_csharp_wrap_before_invocation_rpar = true
+resharper_force_attribute_style = join
+resharper_nested_ternary_style = compact
+resharper_place_accessorholder_attribute_on_same_line = true
+resharper_place_expr_method_on_single_line = true
+resharper_place_field_attribute_on_same_line = true
+resharper_place_method_attribute_on_same_line = if_owner_is_single_line
 resharper_wrap_chained_binary_expressions = wrap_if_long

@@ -213,6 +213,14 @@ namespace CodeStyle
         MyConstant,
     }
 
+    public class AttributeAttribute : Attribute
+    {
+        public AttributeAttribute(params object[] ps)
+        {
+
+        }
+    }
+    
 
     public class AttrAttribute : Attribute
     {

@@ -3,17 +3,16 @@ namespace CodeStyle.Indents
     /// <summary>
     /// 插入语?
     /// </summary>
-    public class Parenthesis
+    public class Parenthesis : Base
     {
+
         /// <summary>
         /// 在括号内使用连续行缩进
         /// </summary>
+        // Use continuous line indent inside parenthesis
         private void UseContinuousLineIndentInsideParenthesis()
         {
-            var parameter1 = Imitation.Value<bool>();
-            var parameter2 = Imitation.Value<bool>();
-
-            var x = Imitation.Method(
+            var x = Method(
                 parameter1,
                 parameter2
             );
@@ -22,6 +21,7 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 缩进方法声明括号
         /// </summary>
+        // Indent method declarations' parenthesis
         public interface IIndentMethodDeclarationsParenthesis
         {
             void Method(
@@ -33,19 +33,22 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 缩进方法调用括号
         /// </summary>
+        //     Indent method calls' parenthesis
         public void IndentMethodCallsParenthesis()
         {
-            UseContinuousLineIndentInsideParenthesis();
+            var x = Method(
+                parameter1,
+                parameter2
+            );
         }
 
 
         /// <summary>
         /// 缩进语句 If While For Etc 括号
         /// </summary>
+        //     Indent statement (if, while, for, etc) parenthesis
         public void IndentStatementIfWhileForEtcParenthesis()
         {
-            var condition1 = Imitation.Value<bool>();
-            var condition2 = Imitation.Value<bool>();
             if (
                 condition1 &&
                 condition2
@@ -56,6 +59,7 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 缩进类型参数角度
         /// </summary>
+        //     Indent type parameter's angles
         public interface IIndentTypeParametersAngles
         {
             void Method<
@@ -67,9 +71,10 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 缩进类型参数角度
         /// </summary>
+        //     Indent type argument's angles
         public void IndentTypeArgumentsAngles()
         {
-            var x = Imitation.Method<
+            var x = Method<
                 Class1,
                 Class2
             >();
@@ -78,6 +83,7 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 缩进其他括号和括号
         /// </summary>
+        //     Indent other parenthesis and brackets
         public void IndentOtherParenthesisAndBrackets()
         {
             var x = 1 * checked(

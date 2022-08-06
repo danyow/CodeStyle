@@ -1,22 +1,27 @@
 using System;
 using SomeClass = System.String;
 
+
 namespace CodeStyle.Indents
 {
     /// <summary>
     /// 在列中对齐相似的代码
     /// </summary>
-    public class AlignSimilarCodeInColumns
+    public class AlignSimilarCodeInColumns: Base
     {
+        // Fix column alignment in adjacent lines
         // FixColumnAlignmentInAdjacentLines （修复相邻行中的列对齐）
         // When formatting some code, also fix column alignment in adjacent lines if needed
         // 格式化某些代码时，如果需要，还可以修复相邻行中的列对齐
 
 
+
+        
         /// <summary>
         /// 字段和常量
         /// </summary>
-        private class FieldsAndConstants
+        // Fields and constants
+        class C
         {
             [Attr] private string x = "x";
             [Attr(2)] public SomeClass xxxxx = "xxxxx";
@@ -26,10 +31,11 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 属性和事件
         /// </summary>
-        private class PropertiesAndEvents
+        // Properties and events
+        class D
         {
             [Attr] private string x { get; set; } = "x";
-            [Attr(2)] public SomeClass xxxxx { get; set; } = default;
+            [Attr(2)] public SomeClass xxxxx { get; set; } = SomeClass.Empty;
             [Attr, Attr3] private string xxx { get; }
             [Attr] private string x2 => "x";
             [Attr(2)] public SomeClass xxxxx2 => "xxxxx";
@@ -39,23 +45,12 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 简单的方法、操作、代理
         /// </summary>
-        private class SimpleMethodsOperatorsDelegates
+        // Simple methods, operators, delegates
+        class E
         {
-            [Attr] private string x(int p)
-            {
-                return "x" + p;
-            }
-
-            [Attr(2)] public SomeClass xxxxx(string b)
-            {
-                return b;
-            }
-
-            [Attr, Attr3] private string xxx()
-            {
-                return null;
-            }
-
+            [Attr] private string x(int p) { return "x" + p; }
+            [Attr(2)] public SomeClass xxxxx(string b) { return b; }
+            [Attr, Attr3] private string xxx() { return null; }
             [Attr] private string x2(int p) => "x" + p;
             [Attr(2)] public SomeClass xxxxx2(string b) => b;
             [Attr, Attr3] private string xxxx() => null;
@@ -64,13 +59,13 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 多行方法签名
         /// </summary>
+        // Multiline method signature
         private interface IMultilineMethodSignature
         {
             void MyMethod(
                 [Attr, Attr3] string xxx,
                 [Attr] string x = "x",
-                [Attr(2)] SomeClass xxxxx = "xxxxx"
-            )
+                [Attr(2)] SomeClass xxxxx = "xxxxx")
             {
             }
         }
@@ -78,39 +73,32 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 变量和局部常量
         /// </summary>
+        // Variables and local constants
         private void VariablesAndLocalConstants()
         {
-            {
-                var x = 1;
-                var xxxxx = 2;
-                var xxx = 2;
-            }
+            var x = 1;
+            var xxxxx = 2;
+            var xxx = 2;
         }
 
         /// <summary>
         /// 其他赋值和初始化器
         /// </summary>
+        // Other assignments and initializers
         private void OtherAssignmentsAndInitializers()
         {
-            var x = 1;
-            var xxxxx = 2;
-            var xxx = 2;
-
-            {
-                x = 1;
-                xxxxx = 2;
-                xxx = 2;
-            }
+            x = 1;
+            xxxxx = 2;
+            xxx = 2;
         }
 
         /// <summary>
         /// 属性模式
         /// </summary>
+        // Property patterns
         private void PropertyPatterns()
         {
-            var sourceObject = Imitation.Value<object>();
-
-            var matches = sourceObject is MyType
+            bool matches = sourceObject is MyType
             {
                 FShort: 1,
                 FieldLongLong: 2,
@@ -120,10 +108,9 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 嵌套三元运算符
         /// </summary>
+        // Nested ternary operators
         private void NestedTernaryOperators()
         {
-            var y = Imitation.Value<string>();
-
             var x =
                 y == "a" ? 1 :
                 y == "aaaa" ? 4 :
@@ -135,39 +122,26 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 调用相同的方法
         /// </summary>
+        // Invocations of the same method
         private class InvocationsOfTheSameMethod
         {
             [Attr1("x", 1234567)]
             [Attr2("xxxxx", 1)]
             [Attr3(MyEnum.MyConstant, 124)]
-            private void MyMethod()
+            void MyMethod()
             {
                 CallMe("x", 1234567);
                 CallMe("xxxxx", 1);
                 CallMe(MyEnum.MyConstant, 124);
-            }
-
-
-            private static void CallMe(params object[] ps)
-            {
-
             }
         }
 
         /// <summary>
         /// 二进制表达式
         /// </summary>
+        // Binary expressions
         private void BinaryExpressions()
         {
-
-            var zzz = Imitation.Value<bool>();
-            var someCondition = Imitation.Value<bool>();
-            var otherCondition = Imitation.Value<bool>();
-            var aa = Imitation.Value<bool>();
-            var bb = Imitation.Value<bool>();
-            var x = Imitation.Value<string>();
-            var xxxxxxx = Imitation.Value<string>();
-            var xx = Imitation.Value<MoreThen>();
 
             if (
                 zzz ||
@@ -177,7 +151,7 @@ namespace CodeStyle.Indents
                 xxxxxxx != "aaaa" ||
                 xx > "aa")
             {
-                Imitation.DoSomething();
+                DoSomething();
             }
         }
 
@@ -185,26 +159,24 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 结尾注释
         /// </summary>
+        // End comments
         private void EndComments()
         {
-            Imitation.DoSomething();     // I'm
-            var y = 6;                   // forced
-            while (y > 0) y--;           // to
-            Imitation.DoSomethingElse(); /* document */
-            var z = 10;                  /* my code */
-            while (z < 100) z++;         /* profusely */
+            DoSomething();       // I'm
+            var y = 6;           // forced
+            while (y > 0) y--;   // to
+            DoSomethingElse();   /* document */
+            var z = 10;          /* my code */
+            while (z < 100) z++; /* profusely */
         }
 
         /// <summary>
         /// 简单的Switch
         /// </summary>
         /// <returns></returns>
+        // Simple switch sections 
         private int SimpleSwitchSections()
         {
-            var op = Imitation.Value<Op>();
-            var x = Imitation.Value<int>();
-            var y = Imitation.Value<int>();
-
             switch (op)
             {
                 case Op.Add:      return x + y;
@@ -212,7 +184,7 @@ namespace CodeStyle.Indents
                 case Op.Multiply: return x * y;
                 case Op.Divide:   return x / y;
             }
-
+            
             return 0;
         }
 
@@ -220,12 +192,9 @@ namespace CodeStyle.Indents
         /// <summary>
         /// Switch 表达式 
         /// </summary>
+        // Switch expressions
         private void SwitchExpressions()
         {
-            var op = Op.Add;
-            var x = Imitation.Value<int>();
-            var y = Imitation.Value<int>();
-
             var z = op switch
             {
                 Op.Add      => x + y,

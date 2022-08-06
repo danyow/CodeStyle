@@ -3,78 +3,75 @@ namespace CodeStyle.Indents
     /// <summary>
     /// 嵌套语句
     /// </summary>
-    public class NestedStatements
+    public class NestedStatements : Base
     {
+        // Indent nested "using" statements 
         private void NestedUsing()
         {
-            using (var a = new A())
-            using (var b = new B())
-            using (var c = new C())
+            using (A a = new A())
+            using (B b = new B())
+            using (C c = new C())
             {
-                Imitation.Foo1();
+                foo();
             }
         }
 
-
+        // Indent nested "fixed" statements
         private unsafe void NestedFixed()
         {
-            var x = Imitation.Value<int[]>();
+            var x = Value<int[]>();
+            var y = Value<int[]>();
+            var z = Value<int[]>();
 
             fixed (int* a = x)
-            fixed (int* b = x)
-            fixed (int* c = x)
+            fixed (int* b = y)
+            fixed (int* c = z)
             {
-                Imitation.Foo1();
+                foo();
             }
         }
 
+        // Indent nested "lock" statements
         private void NestedLock()
         {
-            var a = new object();
-            var b = new object();
-            var c = new object();
-
             lock (a)
             lock (b)
             lock (c)
             {
-                Imitation.Foo1();
+                foo();
             }
         }
 
+        // Indent nested "for" statements
         private void NestedFor()
         {
-            for (var a = 0; a < 1; a++)
-            for (var b = 0; b < 2; b++)
-            for (var c = 0; c < 3; c++)
+            for (int a = 0; a < x; a++)
+            for (int b = 0; b < y; b++)
+            for (int c = 0; c < y; c++)
             {
-                Imitation.Foo1();
+                foo();
             }
         }
 
+        // Indent nested "foreach" statements
         private void NestedForeach()
         {
-            var x = Imitation.Value<int[]>();
-            var y = Imitation.Value<int[]>();
-            var z = Imitation.Value<int[]>();
             foreach (var a in x)
             foreach (var b in y)
             foreach (var c in z)
             {
-                Imitation.Foo1();
+                foo();
             }
         }
 
+        // Indent nested "while”statements
         private void NestedWhile()
         {
-            var a = Imitation.Value<bool>();
-            var b = Imitation.Value<bool>();
-            var c = Imitation.Value<bool>();
             while (a)
             while (b)
             while (c)
             {
-                Imitation.Foo1();
+                foo();
             }
         }
 

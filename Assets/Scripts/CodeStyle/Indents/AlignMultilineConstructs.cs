@@ -6,24 +6,21 @@ namespace CodeStyle.Indents
     /// <summary>
     /// 对齐多行结构
     /// </summary>
-    public class AlignMultilineConstructs
+    public class AlignMultilineConstructs : Base
     {
 
         /// <summary>
         /// 制表符用于缩进时如何对齐
         /// </summary>
+        // How to align when tabs are used for indents
         private void HowToAlignWhenTabsAreUsedForIndents()
         {
-            var param1 = Imitation.Value<object>();
-            var param2 = Imitation.Value<object>();
-
-            Imitation.SomeMyMethod(
-                param1,
-                param2
-            );
+            SomeMyMethod(param1,
+                param2);
         }
 
 
+        // Align even if the resulting indentation is too large
         // Align even if the resulting indentation is too large.（即使结果缩进太大也对齐）
         // Allow alignment even if construct is located too far to the right, more than 2/3 of `Hard wrap at` limit
         // 即使构造位置太靠右，也允许对齐，超过 23 的 `Hard wrap at` 限制
@@ -31,18 +28,20 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 方法参数
         /// </summary>
-        private void MethodParameters(
-            int firstParameter,
-            int secondParameter
-        )
+        // Method parameters
+        private void MethodParameters()
         {
-
+            void fooCall(int firstParameter,
+                int secondParameter)
+            {
+            }
         }
 
         /// <summary>
         /// List of base classes and interfaces.（基类和接口列表）
         /// </summary>
-        private class C : BaseClass,
+        // List of base classes and interfaces
+        class C : BaseClass,
             ISomeInterface
         {
         }
@@ -50,10 +49,10 @@ namespace CodeStyle.Indents
         /// <summary>
         /// Linq 查询
         /// </summary>
+        // LINQ query 
         private void LinqQuery()
         {
 
-            var xs = Imitation.Value<object[]>();
             var q = from x in xs
                 where x != null
                 select x;
@@ -62,13 +61,9 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 二进制表达式
         /// </summary>
+        // Binary expressions
         private void BinaryExpressions()
         {
-            var someOperand = Imitation.Value<int>();
-            var operand2 = Imitation.Value<int>();
-            var operand3 = Imitation.Value<int>();
-            var operand4 = Imitation.Value<int>();
-
             var a = someOperand + operand2
                                 + operand3
                                 + operand4;
@@ -77,13 +72,9 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 反缩进二进制表达式
         /// </summary>
+        // Outdent binary operators
         private void OutdentBinaryOperators()
         {
-            var someOperand = Imitation.Value<int>();
-            var operand2 = Imitation.Value<int>();
-            var operand3 = Imitation.Value<int>();
-            var operand4 = Imitation.Value<int>();
-
             var a =
                 someOperand
                 + operand2
@@ -98,9 +89,10 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 链式方法调用
         /// </summary>
+        // Chained method calls
         private void ChainedMethodCalls()
         {
-            Imitation.SomeMethod()
+            MyVar.SomeMethod()
                 .OtherMethod()
                 .ThirdMethod();
         }
@@ -108,14 +100,15 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 链式方法调用中的点
         /// </summary>
+        // Outdent dots in chained method calls
         private void OutdentDotsInChainedMethodCalls()
         {
             var a =
-                ImitationStruct
+                MyVar
                     .SomeMethod()
                     ?.OtherMethod()
                     .ThirdMethod();
-            var b = ImitationStruct
+            var b = MyVar
                 .SomeMethod()
                 ?.OtherMethod()
                 .ThirdMethod();
@@ -124,13 +117,14 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 数组对象和集合初始化器
         /// </summary>
+        // Array, object and collection initializer
         private void ArrayObjectAndCollectionInitializer()
         {
-            var student = new StudentName
+            StudentName student = new StudentName
             {
                 FirstName = "John",
                 LastName = "Smith",
-                ID = 116,
+                ID = 116
             };
         }
 
@@ -138,11 +132,9 @@ namespace CodeStyle.Indents
         /// <summary>
         /// Switch 表达式 
         /// </summary>
+        // Switch expressions
         private void SwitchExpressions()
         {
-            var op = Op.Add;
-            var x = Imitation.Value<int>();
-            var y = Imitation.Value<int>();
             var z = op switch
             {
                 Op.Add      => x + y,
@@ -156,12 +148,10 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 属性模式
         /// </summary>
+        // Property patterns
         private void PropertyPatterns()
         {
-            var sourceObject = Imitation.Value<object>();
-
-            var matches = sourceObject is MyType
-            {
+            bool matches = sourceObject is MyType {
                 Field1: 1,
                 Field2: 2,
             };
@@ -171,13 +161,13 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 二进制模式
         /// </summary>
+        // Binary patterns 
         private void BinaryPatterns()
         {
-            var e = Imitation.Value<int>();
-            const int someOperand = 1;
-            const int operand2 = 2;
-            const int operand3 = 3;
-            const int operand4 = 4;
+            // const int someOperand = 1;
+            // const int operand2 = 2;
+            // const int operand3 = 3;
+            // const int operand4 = 4;
 
             var a = e is someOperand or operand2
                 or operand3
@@ -188,14 +178,9 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 反缩进 二进制模式
         /// </summary>
+        // Outdent binary patterns
         private void OutdentBinaryPatterns()
         {
-            var e = Imitation.Value<int>();
-            const int someOperand = 1;
-            const int operand2 = 2;
-            const int operand3 = 3;
-            const int operand4 = 4;
-
             var a = e is
                 someOperand
                 or operand2
@@ -211,54 +196,44 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 匿名方法体
         /// </summary>
+        // Anonymous method body
         private void AnonymousMethodBody()
         {
-            Imitation.FooCall(
-                delegate
-                {
-                    Imitation.DoSomething();
-                    return 0;
-                }
-            );
+            FooCall(delegate
+            {
+                DoSomething();
+                return 0;
+            });
         }
 
         /// <summary>
         /// 左调用参数
         /// </summary>
+        // Call arguments by '(
         private void CallArgumentsByLeft()
         {
-            var firstParameter = Imitation.Value<object>();
-            var secondParameter = Imitation.Value<object>();
-
-            Imitation.Method(
+            fooCall(
                 firstParameter,
-                secondParameter
-            );
+                secondParameter);
         }
 
         /// <summary>
         /// 左调用参数
         /// </summary>
+        // Call arguments
         private void CallArguments()
         {
-            var firstParameter = Imitation.Value<object>();
-            var secondParameter = Imitation.Value<object>();
-
-            Imitation.Method(
-                firstParameter,
-                secondParameter
-            );
+            fooCall(firstParameter,
+                secondParameter);
         }
 
 
         /// <summary>
         /// 元组组件
         /// </summary>
+        // Tuple components 
         private void TupleComponents()
         {
-            var firstParameter = Imitation.Value<object>();
-            var secondParameter = Imitation.Value<object>();
-
             var tuple = (firstParameter,
                 secondParameter);
         }
@@ -267,13 +242,9 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 其他表达
         /// </summary>
+        // Other expressions
         private void OtherExpressions()
         {
-            var destination = Imitation.Value<bool>();
-            var source1 = Imitation.Value<bool>();
-            var source2 = Imitation.Value<bool>();
-            var source3 = Imitation.Value<bool>();
-
             destination = source1
                 ? source2
                 : source3;
@@ -283,28 +254,28 @@ namespace CodeStyle.Indents
         /// <summary>
         /// 括号内的语句条件
         /// </summary>
+        // Statement conditions inside parenthesis
         private void StatementConditionsInsideParenthesis()
         {
-            var x = Imitation.Value<object>();
-
             while (x is IMyInterface or
                    IMyInterface2 or
                    IMyInterface3
                    {
                        Prop1: 1,
-                       Prop2: 2,
+                       Prop2: 2
                    })
             {
-                Imitation.DoSomething();
+                DoSomething();
             }
         }
 
         /// <summary>
         /// for 语句头
         /// </summary>
+        // ”for" statement header
         private void ForStatementHeader()
         {
-            for (var i = 0;
+            for (int i = 0;
                  i < 10;
                  i++)
             {
@@ -317,7 +288,8 @@ namespace CodeStyle.Indents
         /// <summary>
         /// MultipleDeclarations
         /// </summary>
-        private class MultipleDeclarations
+        // Multiple declarations
+        class D
         {
             private int i = 0,
                 j = 10;
@@ -329,7 +301,8 @@ namespace CodeStyle.Indents
         /// <typeparam name="T1"></typeparam>
         /// <typeparam name="T2"></typeparam>
         /// <typeparam name="T3"></typeparam>
-        private class TypeParametersList<T1,
+        // Type parameters list
+        class Class<T1,
             T2,
             T3>
         {
@@ -340,31 +313,31 @@ namespace CodeStyle.Indents
         /// </summary>
         /// <typeparam name="T1"></typeparam>
         /// <typeparam name="T2"></typeparam>
-        private class TypeParametersConstraints<T1, T2> where T1 : I1
+        // Type parameter constraints
+        class C<T1, T2> where T1 : I1
             where T2 : I1
         {
         }
-
+        
         /// <summary>
         /// 突出的逗号
         /// </summary>
         /// <typeparam name="T1"></typeparam>
         /// <typeparam name="T3"></typeparam>
-        private class OutdentCommas<
+        // Outdent commas
+        class Class<
             T1
             , T3> :
-            BaseClass
+            Base
             , ISomeInterface
         {
-            private void FooCall(
-                int firstParameter,
-                int secondParameter
-            )
+            void fooCall(
+                int firstParameter
+                , int secondParameter)
             {
-                FooCall(
-                    firstParameter,
-                    secondParameter
-                );
+                fooCall(
+                    firstParameter
+                    , secondParameter);
             }
         }
     }

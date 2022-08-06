@@ -1,6 +1,9 @@
-// Indent #if #else #elif #endif （缩进 #if #else #elif #endif）
-// Indent #if, #else, #elif, #endif
+// ReSharper disable InconsistentNaming
+// ReSharper disable ArrangeTypeMemberModifiers
+// ReSharper disable UnusedType.Global
+#pragma warning disable CS1030
 
+// Indent #if, #else, #elif, #endif
 namespace N
 {
     class A
@@ -11,7 +14,6 @@ namespace N
     }
 }
 
-// Indent #region #endRegion （缩进 #regin #endRegion）
 // Indent #region, #endregion
 namespace N
 {
@@ -25,7 +27,6 @@ namespace N
     }
 }
 
-// Indent other preprocessor directives （缩进其他预处理器指令）
 // Indent other preprocessor directives
 namespace N
 {

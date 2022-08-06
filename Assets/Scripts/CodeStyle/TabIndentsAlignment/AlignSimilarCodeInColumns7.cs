@@ -1,13 +1,41 @@
-using System;
-using SomeClass = System.String;
+// ReSharper disable UnusedType.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable LocalVariableHidesMember
+// ReSharper disable UnusedVariable
+// ReSharper disable UnusedMember.Local
+// ReSharper disable ConvertToUsingDeclaration
+// ReSharper disable SuggestVarOrType_SimpleTypes
+// ReSharper disable SuggestVarOrType_BuiltInTypes
+// ReSharper disable InconsistentNaming
+// ReSharper disable ParameterHidesMember
+// ReSharper disable UnusedParameter.Local
+// ReSharper disable ArrangeTypeMemberModifiers
+// ReSharper disable UnusedType.Local
+// ReSharper disable EmptyForStatement
+// ReSharper disable MemberHidesStaticFromOuterClass
+// ReSharper disable UnusedTypeParameter
+// ReSharper disable TailRecursiveCall
+// ReSharper disable FunctionRecursiveOnAllPaths
+// ReSharper disable BuiltInTypeReferenceStyle
+// ReSharper disable StringLiteralTypo
+// ReSharper disable IdentifierTypo
+// ReSharper disable UnassignedGetOnlyAutoProperty
+// ReSharper disable UnusedParameter.Global
 
+#pragma warning disable CS0414
+#pragma warning disable CS8509
+#pragma warning disable CS0108, CS0114
+#pragma warning disable CS8321
+#pragma warning disable CS0219
+
+using SomeClass = System.String;
 
 namespace CodeStyle.TabIndentsAlignment
 {
     /// <summary>
     /// 在列中对齐相似的代码
     /// </summary>
-    public class AlignSimilarCodeInColumns : Base
+    public class AlignSimilarCodeInColumns7 : Base
     {
         // Fix column alignment in adjacent lines
         // FixColumnAlignmentInAdjacentLines （修复相邻行中的列对齐）

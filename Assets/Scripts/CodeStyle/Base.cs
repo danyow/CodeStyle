@@ -184,7 +184,6 @@ namespace CodeStyle
 
         }
 
-
         protected static int Method<T1, T2>(params object[] parameter)
         {
             return 0;
@@ -239,7 +238,6 @@ namespace CodeStyle
             public dynamic PropertyX;
             public dynamic PropertyY;
             public dynamic PropertyZ;
-
 
             public void Dispose()
             {
@@ -334,24 +332,6 @@ namespace CodeStyle
 
         }
 
-        public struct ImitationStruct
-        {
-            public static ImitationStruct? SomeMethod()
-            {
-                return default;
-            }
-
-            public ImitationStruct OtherMethod()
-            {
-                return default;
-            }
-
-            public ImitationStruct ThirdMethod()
-            {
-                return default;
-            }
-        }
-
         protected class StudentName
         {
             public string FirstName;
@@ -378,6 +358,32 @@ namespace CodeStyle
         {
             MyConstant,
         }
+
+
+        protected class SettingsAttribute : Attribute
+        {
+            public SettingsAttribute(params string[] ps)
+            {
+
+            }
+        }
+
+        protected class OptionIsAttribute : Attribute
+        {
+            public OptionIsAttribute(params string[] ps)
+            {
+
+            }
+        }
+
+        protected class TanslateAttribute : Attribute
+        {
+            public TanslateAttribute(params string[] pa)
+            {
+
+            }
+        }
+
 
         protected class AttributeAttribute : Attribute
         {

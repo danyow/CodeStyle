@@ -1,11 +1,19 @@
+// ReSharper disable UnusedType.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable LocalVariableHidesMember
+// ReSharper disable UnusedVariable
+// ReSharper disable UnusedMember.Local
+// ReSharper disable ConvertToUsingDeclaration
+// ReSharper disable SuggestVarOrType_SimpleTypes
+// ReSharper disable SuggestVarOrType_BuiltInTypes
+
 namespace CodeStyle.TabIndentsAlignment
 {
-    /// <summary>
-    /// 嵌套语句
-    /// </summary>
-    public class NestedStatements : Base
+    [Settings(@"Nested Statements")]
+    [Tanslate(@"嵌套语句")]
+    public class NestedStatements2 : Base
     {
-        // Indent nested "using" statements 
+        [Settings(@"Indent nested ""using"" statements")]
         private void NestedUsing()
         {
             using (A a = new A())
@@ -16,7 +24,7 @@ namespace CodeStyle.TabIndentsAlignment
             }
         }
 
-        // Indent nested "fixed" statements
+        [Settings(@"Indent nested ""fixed"" statements")]
         private unsafe void NestedFixed()
         {
             var x = Value<int[]>();
@@ -31,7 +39,7 @@ namespace CodeStyle.TabIndentsAlignment
             }
         }
 
-        // Indent nested "lock" statements
+        [Settings(@"Indent nested ""lock"" statements")]
         private void NestedLock()
         {
             lock (a)
@@ -42,7 +50,7 @@ namespace CodeStyle.TabIndentsAlignment
             }
         }
 
-        // Indent nested "for" statements
+        [Settings(@"Indent nested ""for"" statements")]
         private void NestedFor()
         {
             for (int a = 0; a < x; a++)
@@ -53,7 +61,7 @@ namespace CodeStyle.TabIndentsAlignment
             }
         }
 
-        // Indent nested "foreach" statements
+        [Settings(@"Indent nested ""foreach"" statements")]
         private void NestedForeach()
         {
             foreach (var a in x)
@@ -64,7 +72,7 @@ namespace CodeStyle.TabIndentsAlignment
             }
         }
 
-        // Indent nested "while”statements
+        [Settings(@"Indent nested ""while"" statements")]
         private void NestedWhile()
         {
             while (a)

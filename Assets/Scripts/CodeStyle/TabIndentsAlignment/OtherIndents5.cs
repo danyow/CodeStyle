@@ -1,9 +1,19 @@
+// ReSharper disable UnusedType.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable LocalVariableHidesMember
+// ReSharper disable UnusedVariable
+// ReSharper disable UnusedMember.Local
+// ReSharper disable ConvertToUsingDeclaration
+// ReSharper disable SuggestVarOrType_SimpleTypes
+// ReSharper disable SuggestVarOrType_BuiltInTypes
+// ReSharper disable ArrangeTypeMemberModifiers
+// ReSharper disable UnusedType.Local
+// ReSharper disable UnusedTypeParameter
+
 namespace CodeStyle.TabIndentsAlignment
 {
-    public class OtherIndents : Base
+    public class OtherIndents5 : Base
     {
-
-
         /// <summary>
         /// 从Switch缩进Case
         /// </summary>

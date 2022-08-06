@@ -1,3 +1,27 @@
+// ReSharper disable UnusedType.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable LocalVariableHidesMember
+// ReSharper disable UnusedVariable
+// ReSharper disable UnusedMember.Local
+// ReSharper disable ConvertToUsingDeclaration
+// ReSharper disable SuggestVarOrType_SimpleTypes
+// ReSharper disable SuggestVarOrType_BuiltInTypes
+// ReSharper disable InconsistentNaming
+// ReSharper disable ParameterHidesMember
+// ReSharper disable UnusedParameter.Local
+// ReSharper disable ArrangeTypeMemberModifiers
+// ReSharper disable UnusedType.Local
+// ReSharper disable EmptyForStatement
+// ReSharper disable MemberHidesStaticFromOuterClass
+// ReSharper disable UnusedTypeParameter
+// ReSharper disable TailRecursiveCall
+// ReSharper disable FunctionRecursiveOnAllPaths
+
+#pragma warning disable CS0414
+#pragma warning disable CS8509
+#pragma warning disable CS0108, CS0114
+#pragma warning disable CS8321
+
 using System.Linq;
 
 namespace CodeStyle.TabIndentsAlignment
@@ -5,7 +29,8 @@ namespace CodeStyle.TabIndentsAlignment
     /// <summary>
     /// 对齐多行结构
     /// </summary>
-    public class AlignMultilineConstructs : Base
+    [Settings("AlignMultilineConstructs")]
+    public class AlignMultilineConstructs6 : Base
     {
 
         /// <summary>

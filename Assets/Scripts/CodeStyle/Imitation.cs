@@ -58,6 +58,11 @@ namespace CodeStyle
 
         }
 
+        public static void DoMoreThings()
+        {
+            
+        }
+
         public static void FooCall(Func<int> callback)
         {
 

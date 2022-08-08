@@ -11,6 +11,7 @@
 
 
 // ReSharper disable UnusedType.Global
+
 namespace CodeStyle.Naming
 {
     public class NamingClass

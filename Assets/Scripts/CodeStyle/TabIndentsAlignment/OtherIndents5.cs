@@ -34,7 +34,7 @@ namespace CodeStyle.TabIndentsAlignment
         private void OutdentStatementLabels()
         {
             int a = 5;
-            MyLabel:
+        MyLabel:
             a--;
             if (a > 0) goto MyLabel;
         }
@@ -44,8 +44,7 @@ namespace CodeStyle.TabIndentsAlignment
         /// </summary>
         /// <typeparam name="T1"></typeparam>
         // Indent type constraints
-        class C1<T1>
-            where T1 : I1
+        class C1<T1> where T1 : I1
         {
         }
 
@@ -72,7 +71,7 @@ namespace CodeStyle.TabIndentsAlignment
             while (x is IMyInterface
                    {
                        Prop1: 1,
-                       Prop2: 2
+                       Prop2: 2,
                    })
             {
                 DoSomething();

@@ -38,10 +38,7 @@ namespace CodeStyle.TabIndentsAlignment
         // How to align when tabs are used for indents
         private void HowToAlignWhenTabsAreUsedForIndents()
         {
-            SomeMyMethod(
-                param1,
-                param2
-            );
+            SomeMyMethod(param1, param2);
         }
 
         // Align even if the resulting indentation is too large
@@ -55,10 +52,7 @@ namespace CodeStyle.TabIndentsAlignment
         // Method parameters
         private void MethodParameters()
         {
-            void fooCall(
-                int firstParameter,
-                int secondParameter
-            )
+            void fooCall(int firstParameter, int secondParameter)
             {
             }
         }
@@ -67,8 +61,7 @@ namespace CodeStyle.TabIndentsAlignment
         /// List of base classes and interfaces.（基类和接口列表）
         /// </summary>
         // List of base classes and interfaces
-        class C : BaseClass,
-            ISomeInterface
+        class C : BaseClass, ISomeInterface
         {
         }
 
@@ -90,9 +83,7 @@ namespace CodeStyle.TabIndentsAlignment
         // Binary expressions
         private void BinaryExpressions()
         {
-            var a = someOperand + operand2
-                                + operand3
-                                + operand4;
+            var a = someOperand + operand2 + operand3 + operand4;
         }
 
         /// <summary>
@@ -101,15 +92,8 @@ namespace CodeStyle.TabIndentsAlignment
         // Outdent binary operators
         private void OutdentBinaryOperators()
         {
-            var a =
-                someOperand
-                + operand2
-                + operand3
-                + operand4;
-            var b = someOperand
-                    + operand2
-                    + operand3
-                    + operand4;
+            var a = someOperand + operand2 + operand3 + operand4;
+            var b = someOperand + operand2 + operand3 + operand4;
         }
 
         /// <summary>
@@ -119,8 +103,8 @@ namespace CodeStyle.TabIndentsAlignment
         private void ChainedMethodCalls()
         {
             MyVar.SomeMethod()
-                .OtherMethod()
-                .ThirdMethod();
+                 .OtherMethod()
+                 .ThirdMethod();
         }
 
         /// <summary>
@@ -129,15 +113,12 @@ namespace CodeStyle.TabIndentsAlignment
         // Outdent dots in chained method calls
         private void OutdentDotsInChainedMethodCalls()
         {
-            var a =
-                MyVar
-                    .SomeMethod()
-                    ?.OtherMethod()
-                    .ThirdMethod();
-            var b = MyVar
-                .SomeMethod()
-                ?.OtherMethod()
-                .ThirdMethod();
+            var a = MyVar.SomeMethod()
+                        ?.OtherMethod()
+                         .ThirdMethod();
+            var b = MyVar.SomeMethod()
+                        ?.OtherMethod()
+                         .ThirdMethod();
         }
 
         /// <summary>
@@ -241,10 +222,7 @@ namespace CodeStyle.TabIndentsAlignment
         // Call arguments by '(
         private void CallArgumentsByLeft()
         {
-            fooCall(
-                firstParameter,
-                secondParameter
-            );
+            fooCall(firstParameter, secondParameter);
         }
 
         /// <summary>
@@ -253,10 +231,7 @@ namespace CodeStyle.TabIndentsAlignment
         // Call arguments
         private void CallArguments()
         {
-            fooCall(
-                firstParameter,
-                secondParameter
-            );
+            fooCall(firstParameter, secondParameter);
         }
 
 
@@ -266,8 +241,7 @@ namespace CodeStyle.TabIndentsAlignment
         // Tuple components 
         private void TupleComponents()
         {
-            var tuple = (firstParameter,
-                secondParameter);
+            var tuple = (firstParameter, secondParameter);
         }
 
 
@@ -277,9 +251,7 @@ namespace CodeStyle.TabIndentsAlignment
         // Other expressions
         private void OtherExpressions()
         {
-            destination = source1
-                ? source2
-                : source3;
+            destination = source1 ? source2 : source3;
         }
 
 
@@ -307,9 +279,7 @@ namespace CodeStyle.TabIndentsAlignment
         // ”for" statement header
         private void ForStatementHeader()
         {
-            for (int i = 0;
-                 i < 10;
-                 i++)
+            for (int i = 0; i < 10; i++)
             {
             }
         }
@@ -324,7 +294,7 @@ namespace CodeStyle.TabIndentsAlignment
         class D
         {
             private int i = 0,
-                j = 10;
+                        j = 10;
         }
 
         /// <summary>
@@ -334,9 +304,7 @@ namespace CodeStyle.TabIndentsAlignment
         /// <typeparam name="T2"></typeparam>
         /// <typeparam name="T3"></typeparam>
         // Type parameters list
-        class Class<T1,
-            T2,
-            T3>
+        class Class<T1, T2, T3>
         {
         }
 
@@ -347,7 +315,7 @@ namespace CodeStyle.TabIndentsAlignment
         /// <typeparam name="T2"></typeparam>
         // Type parameter constraints
         class C<T1, T2> where T1 : I1
-            where T2 : I1
+                        where T2 : I1
         {
         }
 

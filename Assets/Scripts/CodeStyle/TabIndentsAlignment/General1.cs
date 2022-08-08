@@ -70,8 +70,7 @@ namespace CodeStyle.TabIndentsAlignment // 制表符缩进对齐
         [Settings(@"Continuous line indent multiplier")]
         public void Foo4()
         {
-            int x = foo1() +
-                    foo2();
+            int x = foo1() + foo2();
         }
     }
 }

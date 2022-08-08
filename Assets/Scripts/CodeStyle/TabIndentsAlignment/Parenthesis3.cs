@@ -19,10 +19,7 @@ namespace CodeStyle.TabIndentsAlignment
         [Tanslate(@"在括号内使用连续行缩进")]
         private void UseContinuousLineIndentInsideParenthesis()
         {
-            var x = Method(
-                parameter1,
-                parameter2
-            );
+            var x = Method(parameter1, parameter2);
         }
 
 
@@ -30,10 +27,7 @@ namespace CodeStyle.TabIndentsAlignment
         [Tanslate(@"缩进方法声明括号")]
         public interface IIndentMethodDeclarationsParenthesis
         {
-            void Method(
-                int parameter1,
-                int parameter2
-            );
+            void Method(int parameter1, int parameter2);
         }
 
 
@@ -41,10 +35,7 @@ namespace CodeStyle.TabIndentsAlignment
         [Tanslate(@"缩进方法调用括号")]
         public void IndentMethodCallsParenthesis()
         {
-            var x = Method(
-                parameter1,
-                parameter2
-            );
+            var x = Method(parameter1, parameter2);
         }
 
 
@@ -52,10 +43,7 @@ namespace CodeStyle.TabIndentsAlignment
         [Tanslate(@"缩进语句 If While For Etc 括号")]
         public void IndentStatementIfWhileForEtcParenthesis()
         {
-            if (
-                condition1 &&
-                condition2
-            )
+            if (condition1 && condition2)
                 return;
         }
 
@@ -64,10 +52,7 @@ namespace CodeStyle.TabIndentsAlignment
         [Tanslate(@"缩进类型参数角度")]
         public interface IIndentTypeParametersAngles
         {
-            void Method<
-                T1,
-                T2
-            >();
+            void Method<T1, T2>();
         }
 
 
@@ -75,10 +60,7 @@ namespace CodeStyle.TabIndentsAlignment
         [Tanslate(@"缩进类型参数角度")]
         public void IndentTypeArgumentsAngles()
         {
-            var x = Method<
-                Class1,
-                Class2
-            >();
+            var x = Method<Class1, Class2>();
         }
 
 
@@ -86,10 +68,7 @@ namespace CodeStyle.TabIndentsAlignment
         [Tanslate(@"缩进其他括号和括号")]
         public void IndentOtherParenthesisAndBrackets()
         {
-            var x = 1 * checked(
-                5 +
-                6
-            );
+            var x = 1 * checked(5 + 6);
         }
     }
 }

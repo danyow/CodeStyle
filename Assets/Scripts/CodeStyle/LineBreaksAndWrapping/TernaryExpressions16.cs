@@ -58,18 +58,14 @@ namespace CodeStyle.LineBreaksAndWrapping
         // 更喜欢“？”之前的包装。还有“。”在三元表达式中
         private dynamic Foo1()
         {
-            return hereGoesSomeBoolExpression
-                ? returnThisIfTrue
-                : returnThatIfFalse;
+            return hereGoesSomeBoolExpression ? returnThisIfTrue : returnThatIfFalse;
         }
 
         // Wrap ternary expression
         // 包装三元表达式
         private void Foo2()
         {
-            myField = someCondition
-                ? true
-                : false;
+            myField = someCondition ? true : false;
         }
 
         // Nested ternary expression style

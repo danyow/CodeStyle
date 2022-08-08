@@ -59,7 +59,10 @@ namespace CodeStyle.Spaces
         // Logical not operator (!)
         private void Foo1()
         {
-            if (!x) return;
+            if (!x)
+            {
+                return;
+            }
         }
 
         // Unary minus operator (-)

@@ -122,12 +122,7 @@ namespace CodeStyle.BracesLayout
         // Use continuous line indent inside expression braces
         private void UseContinuous()
         {
-            int[] array = new int[]
-            {
-                1,
-                2,
-                3
-            };
+            int[] array = new int[] { 1, 2, 3 };
         }
 
 

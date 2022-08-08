@@ -51,19 +51,28 @@ namespace CodeStyle.LineBreaksAndWrapping
         // Keep existing arrangement of embedded statements
         private void P()
         {
-            if (condition) DoSomething();
+            if (condition)
+            {
+                DoSomething();
+            }
             if (condition1)
+            {
                 DoSomething1();
+            }
         }
 
         // Place simple embedded statement on the same line
         private void P2()
         {
             if (condition)
+            {
                 DoSomething();
+            }
             if (condition && // comment
                 condition1)
+            {
                 DoSomething();
+            }
         }
 
         // Place simple ”case” statement on the same line

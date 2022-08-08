@@ -78,8 +78,10 @@ namespace CodeStyle.LineBreaksAndWrapping
         {
             int Property
             {
-                [Attr] get { return x; }
-                [Attr] set { x = value; }
+                [Attr]
+                get { return x; }
+                [Attr]
+                set { x = value; }
             }
 
             private dynamic x;
@@ -93,7 +95,10 @@ namespace CodeStyle.LineBreaksAndWrapping
                 get { return x; }
                 set
                 {
-                    if (value == null) throw new Exception();
+                    if (value == null)
+                    {
+                        throw new Exception();
+                    }
                 }
             }
 

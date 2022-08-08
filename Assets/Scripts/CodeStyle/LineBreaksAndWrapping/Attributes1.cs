@@ -50,7 +50,8 @@ namespace CodeStyle.LineBreaksAndWrapping
         {
         }
 
-        [Attribute] class C1
+        [Attribute]
+        class C1
         {
         }
 
@@ -86,7 +87,8 @@ namespace CodeStyle.LineBreaksAndWrapping
 
         interface I2
         {
-            [Attribute] int Property { get; }
+            [Attribute]
+            int Property { get; }
         }
 
         class C5
@@ -105,14 +107,19 @@ namespace CodeStyle.LineBreaksAndWrapping
         // Place accessor attribute on the same line
         interface I3
         {
-            int Property { [Attribute] get; }
+            int Property
+            {
+                [Attribute]
+                get;
+            }
         }
 
         class C6
         {
             int Property
             {
-                [Attribute] get { return x; }
+                [Attribute]
+                get { return x; }
                 [Attribute]
                 set
                 {

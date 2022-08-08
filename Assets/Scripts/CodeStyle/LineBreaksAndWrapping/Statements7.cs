@@ -104,11 +104,11 @@ namespace CodeStyle.LineBreaksAndWrapping
         class C
         {
             public int i = 0,
-                j = 0,
-                k = 2,
-                l = 3,
-                m = 4,
-                n = 5;
+                       j = 0,
+                       k = 2,
+                       l = 3,
+                       m = 4,
+                       n = 5;
         }
     }
 }

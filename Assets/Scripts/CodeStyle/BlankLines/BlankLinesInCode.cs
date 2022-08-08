@@ -92,9 +92,15 @@ namespace CodeStyle.BlankLines
         dynamic Foo(string args)
         {
             Logger.Log("Foo");
-            if (arg == null) throw new ArgumentNullException();
+            if (arg == null)
+            {
+                throw new ArgumentNullException();
+            }
             var smth = arg.GetSomething();
-            if (smth == null) return null;
+            if (smth == null)
+            {
+                return null;
+            }
             var smthElse = smth.GetSomethingElse();
             return null;
         }
@@ -102,9 +108,15 @@ namespace CodeStyle.BlankLines
         // After statements with control transfer
         dynamic Foo2(string args)
         {
-            if (arg == null) throw new ArgumentNullException();
+            if (arg == null)
+            {
+                throw new ArgumentNullException();
+            }
             var smth = arg.GetSomething();
-            if (smth == null) return null;
+            if (smth == null)
+            {
+                return null;
+            }
             var smthElse = smth.GetSomethingElse();
             return null;
         }
@@ -149,7 +161,9 @@ namespace CodeStyle.BlankLines
 
             DoSomething();
             foreach (var x in y)
+            {
                 x.DoSomething();
+            }
             DoSomething();
             DoSomething(
                 1,
@@ -171,7 +185,9 @@ namespace CodeStyle.BlankLines
 
             DoSomething();
             foreach (var x in y)
+            {
                 x.DoSomething();
+            }
             DoSomething();
             DoSomething(
                 1,

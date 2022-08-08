@@ -83,12 +83,7 @@ namespace CodeStyle.Spaces
         // Within single -line expression braces
         private void Foo7()
         {
-            int[] x = new int[]
-            {
-                0,
-                1,
-                2
-            };
+            int[] x = new int[] { 0, 1, 2 };
         }
     }
 }

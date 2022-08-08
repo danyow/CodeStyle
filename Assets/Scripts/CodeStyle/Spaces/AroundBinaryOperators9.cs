@@ -59,12 +59,7 @@ namespace CodeStyle.Spaces
         // Assignment operators (=+....
         private void Foo1()
         {
-            int[] x = new int[]
-            {
-                0,
-                1,
-                2
-            };
+            int[] x = new int[] { 0, 1, 2 };
         }
 
         // Logical operators (&,|)

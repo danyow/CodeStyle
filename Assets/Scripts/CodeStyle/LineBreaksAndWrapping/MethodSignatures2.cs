@@ -72,12 +72,7 @@ namespace CodeStyle.LineBreaksAndWrapping
         }
 
         // Keep existing arrangement of parenthesis in declaration
-        void SomeMethod0(
-            int p1,
-            int p2,
-            int p3,
-            int p4
-        )
+        void SomeMethod0(int p1, int p2, int p3, int p4)
         {
         }
 

@@ -58,15 +58,15 @@ namespace CodeStyle.LineBreaksAndWrapping
         private void Foo1()
         {
             obj.Method()
-                .Method()
-                .Method()
-                .Method()
-                .Method()
-                .Method()
-                .Method()
-                .Method()
-                .Method()
-                .Method();
+               .Method()
+               .Method()
+               .Method()
+               .Method()
+               .Method()
+               .Method()
+               .Method()
+               .Method()
+               .Method();
         }
 
         // Wrap chained method calls
@@ -75,10 +75,10 @@ namespace CodeStyle.LineBreaksAndWrapping
         {
             var a = obj.Method().Method() +
                     obj.Method().Method()
-                        .Method().Method()
-                        .Method().Method()
-                        .Method().Method()
-                        .Method().Method();
+                       .Method().Method()
+                       .Method().Method()
+                       .Method().Method()
+                       .Method().Method();
         }
     }
 }

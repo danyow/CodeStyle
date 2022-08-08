@@ -69,6 +69,8 @@ namespace CodeStyle.LineBreaksAndWrapping
         // Prefer wrap before
         private void PreferWrapBefore()
         {
+            CallMethod(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+
             CallMethod(
                 arg1,
                 arg2,

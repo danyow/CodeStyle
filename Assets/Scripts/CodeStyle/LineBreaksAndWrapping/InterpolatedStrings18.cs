@@ -57,8 +57,7 @@ namespace CodeStyle.LineBreaksAndWrapping
         // 换行逐字插值字符串
         private void Foo1()
         {
-            var s =
-                $@"id={id} src={src} dest={dest}";
+            var s = $@"id={id} src={src} dest={dest}";
         }
     }
 }

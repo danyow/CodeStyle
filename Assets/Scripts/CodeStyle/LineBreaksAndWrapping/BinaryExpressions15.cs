@@ -106,7 +106,9 @@ namespace CodeStyle.LineBreaksAndWrapping
         private void Foo5()
         {
             if (var1 == null || var2 == null)
+            {
                 Foo();
+            }
         }
 
         // Force chop compound condition in "while" statement
@@ -114,7 +116,9 @@ namespace CodeStyle.LineBreaksAndWrapping
         private void Foo6()
         {
             while (var1 == null || var2 == null)
+            {
                 Foo();
+            }
         }
 
         // Force chop compound condition in "do" statement
